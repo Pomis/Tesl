@@ -18,6 +18,7 @@ init:
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
+    $ brokenFinger = False
 
     # Статы с девушками
     $ yumingPoints = 0
