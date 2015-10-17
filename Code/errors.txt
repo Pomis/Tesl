@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 21: expected statement.
+    e \"А где я?\" "
+      ^
+
+Ren'Py Version: Ren'Py 6.99.6.739
