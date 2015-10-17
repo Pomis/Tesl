@@ -1,24 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 151, in script
-    $ yuming += 1
-  File "game/script.rpy", line 151, in <module>
-    $ yuming += 1
-NameError: name 'yuming' is not defined
+  File "game/rootInferno.rpy", line 32, in script
+    scene bg night ocean with blink
+  File "game/rootInferno.rpy", line 32, in <module>
+    scene bg night ocean with blink
+NameError: name 'blink' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 151, in script
-    $ yuming += 1
-  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 797, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1448, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 151, in <module>
-    $ yuming += 1
-NameError: name 'yuming' is not defined
+  File "game/rootInferno.rpy", line 32, in script
+    scene bg night ocean with blink
+  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 1246, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1477, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1472, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/rootInferno.rpy", line 32, in <module>
+    scene bg night ocean with blink
+NameError: name 'blink' is not defined
 
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739
