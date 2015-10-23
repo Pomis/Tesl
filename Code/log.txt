@@ -1,36 +1,36 @@
-Sun Oct 18 18:37:14 2015
+Sat Oct 24 01:29:03 2015
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739
  
 
-Bootstrap to the start of init.init took 0.10s
+Bootstrap to the start of init.init took 0.08s
 Early init took 0.03s
 Loader init took 0.00s
 Loading error handling took 0.02s
-Loading script took 0.21s
+Loading script took 0.16s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to u'/Users/romanismagilov/Library/RenPy/backups/Code':
-Dump and make backups. took 0.03s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Creating interface object took 0.07s
+Creating interface object took 0.11s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.06s
+Save screen analysis took 0.05s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.00s
+Interface start took 0.01s
 
 Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(1600, 1200)
@@ -180,18 +180,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.00941300392s
+Total time until interface ready: 0.926857948303s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.037348 seconds.
-- Frame drawn at 0.047076 seconds.
-- Frame drawn at 0.064088 seconds.
-- Frame drawn at 0.090283 seconds.
-- 0.090283 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.03s
-Running _start took 0.00s
+- Frame drawn at 0.025194 seconds.
+- Frame drawn at 0.035669 seconds.
+- Frame drawn at 0.048381 seconds.
+- Frame drawn at 0.064678 seconds.
+- 0.064678 seconds to render 5 frames.
