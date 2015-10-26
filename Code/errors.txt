@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 93: end of line expected.
-    show yuming shamed onlayer forward on center
-                                       ^
+File "game/script.rpy", line 75: expected statement.
+    clear boat
+              ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

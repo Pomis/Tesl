@@ -11,7 +11,7 @@ init python:
 image bg ocean = "images/ocean.jpg"
 image bg sky = "images/sky.jpg"
 image bg sky ocean = "images/sky-ocean.jpg"
-
+image bg ship crashed = "images/ship-crashed.jpg"
 
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")
@@ -20,7 +20,8 @@ image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming stupid = "images/yuming-stupid.png"
 image yuming sleepy = "images/yuming-sleeping.png"
 image yuming smiled = "images/yuming-smiled.png"
-image chaika = "images/chaiqa.png"
+image boat = im.FactorScale("images/boat.png",0.8,0.8)
+
 
 init:
     # Характеристика игрока
@@ -34,6 +35,10 @@ init:
 
     # Позиции
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
+    $ bottom = Position(xpos=0.4, xanchor='center', ypos=0.8)
+
+    # Эффекты
+    $ flash = Fade(.25, 0, .45, color="#fff")
     
 
 # Игра начинается здесь.
@@ -43,13 +48,13 @@ label start:
     $ camera_reset()
     # It takes 0 second to move layers
     $ layer_move("background", 2222)
-    $ layer_move("middle", 1400)
-    $ layer_move("forward", 1000)
+    $ layer_move("middle", 1700)
+    $ layer_move("forward", 1200)
     
     scene bg sky ocean onlayer background
     $ camera_move(0, -10000, 0, 0, 0)
 
-    $ camera_moves( ( (160, -10030, 0, 0, 1, 'ease'),(0, -10000, 0, 0, 2, 'ease') ), loop=True)
+    $ camera_moves( ( (160, -10030, 0, 0, 2, 'ease'),(0, -10000, 0, 0, 4, 'ease') ), loop=True)
     play music "music/123.mp3"
     # scene bg sky
     with fade
@@ -60,16 +65,23 @@ label start:
     "Кругом так безмятежно, тихо и спокойно, что глаза сами закрылись. Ничего не мешает поспать ещё часок, разве что солнце припекает, да и покачивает меня почему-то.. опять качнуло. И вдруг я вспомнил."
     with vpunch
     $ camera_move(2500, -8000, 0, 0, 1, 'ease')
+    show boat onlayer middle at bottom
     "Так резко вскакивать всё же не стоило: я запутался в каких-то вещах и чуть не упал за борт. "
     $ camera_move(500, -2000, 0, 0, 1, 'ease')
     "Удержав равновесие, я поднял глаза и увидел океан."
-    $ camera_moves( ( (660, -2100, 0, 0, 1, 'ease'),(500, -2000, 0, 0, 2, 'ease') ), loop=True)
+    $ camera_moves( ( (660, -2100, 0, 0, 2, 'ease'),(500, -2000, 0, 0, 4, 'ease') ), loop=True)
     "Впереди, слева, сзади -- кругом вода. Всё ещё не до конца соображая, я оглядел поверхность на которой стою. "
     "Похоже это лодка. Большая рыжая резиновая лодка. В фильмах на таких спасаются люди, когда тонут корабли. Наш похоже как раз затонул. "
-    
+    $ camera_move(0,0,400,0,0)
+    hide boat onlayer middle
+    scene bg ship crashed onlayer background with flash
     "В голове начали вспыхивать образы прошедших событий: мельтешение людей, крики, большой круизный лайнер, накренившийся и объятый огнём, яркие звёзды над головой и холодный ветер."
     "Картинки в моей голове сложились в целое и безысходность начала наполнять мою душу. "
     "\" Этого не может быть. нет-нет, это сон или всё что угодно, но это не реальность и происходит не со мной\""
+    scene bg sky ocean onlayer background
+    show boat onlayer middle at bottom
+    $ camera_move(500, -2000, 0, 0, 0)
+    $ camera_moves( ( (660, -2100, 0, 0, 2, 'ease'),(500, -2000, 0, 0, 4, 'ease') ), loop=True)
     "Но внезапная волна, окатившая меня с головы до ног, смыла все мои мысли и пробудила от оцепенения. Надо что-то делать. Ведь я всё ещё жив."
     
     "Один я. Один океан. Кто кого? Я отбросил эти мысли и решил осмотреться."
@@ -91,7 +103,7 @@ label start:
     "По идее, шлем в таких костюмах закрепляется либо электромагнитами, либо механически с помощью вращательного движения. "
     "В первом случае я не имел шансов его снять, но если же он закреплен вручную, то проблем быть не должно. Одно движение, щелчок и готово - шлем отделился от остального костюма. "
     "Я начал потихоньку снимать шлем и через несколько секунд передо мной предстало лицо молодой девушки, на вид лет 16.\""
-    show yuming shamed onlayer middle at center
+    show yuming shamed onlayer forward at center
     with dissolve
     "Любопытство мгновенно заглушило все мои страхи, я откинул навес и удивлённо уставился на того, кто был под ним."
     "Это определённо был человек, судя по комплекции даже наверно ребёнок, но вот одежда.. Вернее, одеждой это не назовёшь. Какой-то чёрный водолазный костюм с красивыми зелёными узорами и вставками. "
