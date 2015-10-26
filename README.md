@@ -25,7 +25,9 @@
 [Инферно рут](Code/game/rootInferno.rpy)   
 [Рут солдата](Code/game/rootSoldier.rpy)
 
-
+***
+###Лицензии
+[тык](Лицензии.md)
 
 ***
 [test](http://pomis.github.io/Tesl/)

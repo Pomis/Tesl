@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 75: expected statement.
-    clear boat
-              ^
+File "game/rootInferno.rpy", line 41: expected 'simple_expression' not found.
+    scene bg night ocean onlayer background with $ camera_move(500, -2000, 0, 0, 0) 
+                                                 ^
 
 Ren'Py Version: Ren'Py 6.99.6.739
