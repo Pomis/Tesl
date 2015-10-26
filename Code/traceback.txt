@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' 'images/yumong-smiled.png'>:
-  File "game/script.rpy", line 161, in script
-    "Юминг едва заметно улыбнулась."
-IOError: Couldn't find file 'images/yumong-smiled.png'.
+While loading <'Image' 'images/chaika.png'>:
+  File "game/script.rpy", line 58, in script
+    "И звук ветра, затихающий и еле заметный. Я мог бы долго так лежать и любоваться красотой бесконечного космического океана, если бы не одна любопытная мысль, пришедшая мне в голову. "
+IOError: Couldn't find file 'images/chaika.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 161, in script
-    "Юминг едва заметно улыбнулась."
+  File "game/script.rpy", line 58, in script
+    "И звук ветра, затихающий и еле заметный. Я мог бы долго так лежать и любоваться красотой бесконечного космического океана, если бы не одна любопытная мысль, пришедшая мне в голову. "
   File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 594, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "/Applications/renpy-6.99.6-sdk/renpy/exports.py", line 1032, in say
@@ -54,6 +54,12 @@ Full traceback:
     cr = render(child, widtho, heighto, st - self.child_st_base, at)
   File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
     rv = d.render(widtho, heighto, st, at)
+  File "/Applications/renpy-6.99.6-sdk/renpy/display/motion.py", line 1079, in render
+    child = render(self.child, width, height, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
   File "/Applications/renpy-6.99.6-sdk/renpy/display/image.py", line 218, in render
     return wrap_render(self.target, width, height, st, at)
   File "/Applications/renpy-6.99.6-sdk/renpy/display/image.py", line 90, in wrap_render
@@ -70,7 +76,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "/Applications/renpy-6.99.6-sdk/renpy/loader.py", line 517, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'images/yumong-smiled.png'.
+IOError: Couldn't find file 'images/chaika.png'.
 
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739

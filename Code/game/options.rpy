@@ -8,7 +8,8 @@
 ## раскомментировать в подходящих вам ситуациях.
 
 init -1 python hide:
-
+    ## Слои для камеры
+    config.layers = ['master', 'background', 'middle', 'forward', 'transient', 'screens', 'overlay']
     ## Включать ли нам инструменты разработчика? Здесь нужно
     ## поставить False перед выпуском игры, чтобы
     ## пользователь не смог мошенничать, используя эти инструменты.
@@ -17,8 +18,8 @@ init -1 python hide:
 
     ## Эти управляют шириной и высотой экрана.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 1280
+    config.screen_height = 720
 
     ## Это управляет заголовком окна, когда Ren'Py
     ## запущен в оконном режиме.
