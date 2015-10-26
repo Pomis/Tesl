@@ -1,21 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While loading <'Image' 'images/copter.jpg'>:
-  File "game/rootInferno.rpy", line 64, in script
-    scene bg copter with dissolve
+  File "game/rootInferno.rpy", line 69, in script
+    play music "music/258007__dallasbass__helicopter-in-mountains.wav"
 IOError: Couldn't find file 'images/copter.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/rootInferno.rpy", line 64, in script
-    scene bg copter with dissolve
-  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 1250, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "/Applications/renpy-6.99.6-sdk/renpy/exports.py", line 1267, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Applications/renpy-6.99.6-sdk/renpy/display/core.py", line 1925, in do_with
-    clear=clear)
+  File "game/rootInferno.rpy", line 69, in script
+    play music "music/258007__dallasbass__helicopter-in-mountains.wav"
+  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 594, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/Applications/renpy-6.99.6-sdk/renpy/exports.py", line 1032, in say
+    who(what, interact=interact)
+  File "/Applications/renpy-6.99.6-sdk/renpy/character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Applications/renpy-6.99.6-sdk/renpy/character.py", line 688, in do_display
+    **display_args)
+  File "/Applications/renpy-6.99.6-sdk/renpy/character.py", line 491, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Applications/renpy-6.99.6-sdk/renpy/ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "/Applications/renpy-6.99.6-sdk/renpy/display/core.py", line 2346, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
   File "/Applications/renpy-6.99.6-sdk/renpy/display/core.py", line 2683, in interact_core
@@ -28,12 +34,6 @@ Full traceback:
     rv = d.render(widtho, heighto, st, at)
   File "/Applications/renpy-6.99.6-sdk/renpy/display/layout.py", line 650, in render
     surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
-    rv = d.render(widtho, heighto, st, at)
-  File "/Applications/renpy-6.99.6-sdk/renpy/display/transition.py", line 363, in render
-    top = render(self.new_widget, width, height, st, at)
   File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
     cpdef render(d, object widtho, object heighto, double st, double at):
   File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
