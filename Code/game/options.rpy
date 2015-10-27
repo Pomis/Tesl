@@ -98,22 +98,22 @@ init -1 python hide:
     ## левого/правого и верхнего/нижнего бордюров
     ## соответственно.
 
-    # style.window.background = Frame("frame.png", 12, 12)
+    style.window.background = Frame("images/patch.png", 25, 25)
 
     ## Внешние поля - пространство, окружающее окно, на котором
     ## не рисуется фон.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
+    # style.window.left_margin = 150
+    # style.window.right_margin = 150
     # style.window.top_margin = 6
     # style.window.bottom_margin = 6
 
     ## Внутренние поля - пространство внутри окна, где
     ## рисуется фон.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
+    style.window.left_padding = 220
+    style.window.right_padding = 220
+    style.window.top_padding = 20
     # style.window.bottom_padding = 6
 
     ## Это минимальная высота окна, включая поля.
@@ -144,7 +144,7 @@ init -1 python hide:
 
     ## Файл, содержащий шрифт.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "PTSans.ttc"
 
     ## Размер текста по умолчанию.
 
