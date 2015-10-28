@@ -191,7 +191,7 @@ screen main_menu:
         textbutton _("Начать игру") action Start()
         textbutton _("Загрузить игру") action ShowMenu("load")
         textbutton _("Настройки") action ShowMenu("preferences")
-        textbutton _("Справка") action Help()
+        # textbutton _("Справка") action Help()
         textbutton _("Выход") action Quit(confirm=False)
 
 init -2 python:
@@ -224,7 +224,7 @@ screen navigation:
         textbutton _("Сохранить игру") action ShowMenu("save")
         textbutton _("Загрузить игру") action ShowMenu("load")
         textbutton _("Главное меню") action MainMenu()
-        textbutton _("Справка") action Help()
+        # textbutton _("Справка") action Help()
         textbutton _("Выход") action Quit()
 
 init -2 python:

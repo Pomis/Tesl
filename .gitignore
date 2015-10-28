@@ -2,3 +2,9 @@
 *.save
 
 *.save
+
+*.rpyc
+
+*.rpyb
+
+*.save
