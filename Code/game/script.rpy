@@ -12,10 +12,15 @@ image bg ocean = "images/ocean.jpg"
 image bg sky = "images/sky.jpg"
 image bg sky ocean = "images/sky-ocean.jpg"
 image bg ship crashed = "images/ship-crashed.jpg"
+image bg bus = "images/0575_BG35_BB.png"
+image bg hospital room day = "images/012_BG_005A.jpg"
+image bg hospital room sunset = "images/013_BG_005B.jpg"
+
 
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
+# image yuming shamed = "images/yuming-shamed.png"
 image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming stupid = "images/yuming-stupid.png"
 image yuming sleepy = "images/yuming-sleeping.png"

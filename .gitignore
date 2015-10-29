@@ -6,3 +6,9 @@
 *.rpyc
 
 *.rpyc
+
+Code/log.txt
+
+Code/tmp/navigation.json
+
+Code/game/saves/persistent
