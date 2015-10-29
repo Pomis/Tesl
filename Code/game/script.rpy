@@ -20,8 +20,9 @@ image bg hospital room sunset = "images/013_BG_005B.jpg"
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
-# image yuming shamed = "images/yuming-shamed.png"
-image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
+image yuming shamed = "images/yuming-shamed.png"
+image yuming angry = "images/yuming-angry.png"
+#image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming stupid = "images/yuming-stupid.png"
 image yuming sleepy = "images/yuming-sleeping.png"
 image yuming smiled = "images/yuming-smiled.png"
@@ -55,7 +56,7 @@ label start:
     # It takes 0 second to move layers
     $ layer_move("background", 2222)
     $ layer_move("middle", 1700)
-    $ layer_move("forward", 1200)
+    $ layer_move("forward", 1500)
     
     scene bg sky ocean onlayer background
     $ camera_move(0, -10000, 0, 0, 0)
@@ -131,6 +132,8 @@ label start:
     "— Эмм... Просто ты мне кое-кого напомнила... Ну, одну знакомую... Не важно. Кто ты такая? И что это за хреновина на тебе?"
 
     # show yuming shamed with vpunch
+    show yuming angry onlayer forward at center
+    with dissolve
     "И снова получил по голове. Незнакомка тяжело дышала, да и вообще, выглядела, мягко говоря, потрёпанно. Но это ничуть не смущало её, да и за что она меня всё время бьёт? "
     "Да и разве можно так с незнакомым человеком? Да что с ней не так? Она села и отвернулась от меня, смотря на горизонт произнесла:"
 

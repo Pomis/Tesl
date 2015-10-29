@@ -1,21 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Could not load file /Users/romanismagilov/Desktop/Учёба, проекты/Рассказик/Tesl/Code/game/childhood.rpyc.
+  File "game/script.rpy", line 28, in script
+    image boat = im.FactorScale("images/boat.png")
+  File "game/script.rpy", line 28, in <module>
+    image boat = im.FactorScale("images/boat.png")
+TypeError: __init__() takes at least 3 arguments (2 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Applications/renpy-6.99.6-sdk/renpy/bootstrap.py", line 281, in bootstrap
-    renpy.main.main()
-  File "/Applications/renpy-6.99.6-sdk/renpy/main.py", line 358, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "/Applications/renpy-6.99.6-sdk/renpy/script.py", line 259, in load_script
-    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
-  File "/Applications/renpy-6.99.6-sdk/renpy/script.py", line 730, in load_appropriate_file
-    raise Exception("Could not load file %s." % lastfn)
-Exception: Could not load file /Users/romanismagilov/Desktop/Учёба, проекты/Рассказик/Tesl/Code/game/childhood.rpyc.
+  File "game/script.rpy", line 28, in script
+    image boat = im.FactorScale("images/boat.png")
+  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 888, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1472, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 28, in <module>
+    image boat = im.FactorScale("images/boat.png")
+TypeError: __init__() takes at least 3 arguments (2 given)
 
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739
- 
+TESL 0.0
