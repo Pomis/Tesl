@@ -15,7 +15,8 @@ image bg ship crashed = "images/ship-crashed.jpg"
 image bg bus = "images/0575_BG35_BB.png"
 image bg hospital room day = "images/012_BG_005A.jpg"
 image bg hospital room sunset = "images/013_BG_005B.jpg"
-
+image bg hospital reg = "images/rega.jpg"
+image bg hospital = "images/buildings_107.jpg"
 
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")

@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/rootInferno.rpy", line 72: expected end of line
-    stop sound "music/258007__dallasbass__helicopter-in-mountains.wav"
-               ^
+File "game/warBase.rpy", line 4: expected '=' not found.
+    define bg entrace "images/entrace.jpg"
+              ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

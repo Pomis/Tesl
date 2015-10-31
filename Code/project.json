@@ -1,1 +1,1 @@
-{"build_update": false, "packages": ["win"], "add_from": true, "force_recompile": true}
+{"build_update": false, "packages": ["win"], "add_from": true, "force_recompile": false}
