@@ -209,7 +209,7 @@ label start:
     yu "Всё, хватит. Чини!"
     if agressionPoints>1:
         menu:
-            "Зачем мне это делать?":
+            "Я не буду этого делать.":
                 $ agressionPoints += 1;
                 jump rootInferno
             "—Хм... Ладно, попробую. С чего начать?":
