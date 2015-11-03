@@ -21,11 +21,14 @@
 
 Список запрограммированных глав:   
 Глава I   
-[Основной рут](Code/game/script.rpy)
+[Общая](Code/game/ch1.rpy)
 
 Глава II   
-[Инферно рут](Code/game/rootInferno.rpy)   
-[Рут солдата](Code/game/rootSoldier.rpy)
+[Инферно](Code/game/ch2inferno.rpy)   
+[Солдат](Code/game/ch2soldier.rpy)  
+
+Глава III  
+[Общая](Code/game/ch3.rpy)
 
 ***
 ###Лицензии

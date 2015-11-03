@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/warBase.rpy", line 4: expected '=' not found.
-    define bg entrace "images/entrace.jpg"
-              ^
+File "game/ch3.rpy", line 74: expected ':' not found.
+    else 
+         ^
 
 Ren'Py Version: Ren'Py 6.99.6.739
