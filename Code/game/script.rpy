@@ -40,6 +40,7 @@ init:
 
     # Статы с девушками
     $ yumingPoints = 0
+    $ mariePoints = 0
 
     # Позиции
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
