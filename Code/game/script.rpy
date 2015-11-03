@@ -53,7 +53,20 @@ init:
 # Игра начинается здесь.
 label start:
 
-    jump ocean
+    menu:
+        "ch1 - ocean":
+            jump ocean
+        "ch2 - inferno":
+            jump rootInferno
+        "ch2 - soldier":
+            jump rootSoldier
+        "ch3 - warBase":
+            jump warBase
+        "ch3 - day1":
+            jump ch3day1
+
+
+
                                                                                                                                                                                                                 
 
     return
