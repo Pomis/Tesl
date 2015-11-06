@@ -2,8 +2,6 @@
 errors listed below, and try again.
 
 
-File "game/ch3.rpy", line 74: expected ':' not found.
-    else 
-         ^
+File "game/ch2inferno.rpy", line 35: Tab characters are not allowed in Ren'Py scripts.
 
 Ren'Py Version: Ren'Py 6.99.6.739

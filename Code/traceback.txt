@@ -1,32 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 209, in script
-    python:
-  File "renpy/common/00start.rpy", line 213, in <module>
-    renpy.call_in_new_context("_main_menu")
-KeyError: u'_main_menu_screen'
+  File "game/ch3.rpy", line 146, in script
+    ma "— Вот только использовать их мы можем только для обороны военной базы. У нас их всего около пятидесяти. Расчётные боевые потери ботов при сражении близки к 90%."
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 209, in script
-    python:
-  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 797, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1448, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00start.rpy", line 213, in <module>
-    renpy.call_in_new_context("_main_menu")
-  File "/Applications/renpy-6.99.6-sdk/renpy/game.py", line 309, in call_in_new_context
-    return renpy.execution.run_context(False)
-  File "/Applications/renpy-6.99.6-sdk/renpy/execution.py", line 727, in run_context
-    context.pop_all_dynamic()
-  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
-    $ ui.interact()
-  File "/Applications/renpy-6.99.6-sdk/renpy/execution.py", line 276, in pop_dynamic
-    del store[k]
-KeyError: u'_main_menu_screen'
+  File "game/ch3.rpy", line 146, in script
+    ma "— Вот только использовать их мы можем только для обороны военной базы. У нас их всего около пятидесяти. Расчётные боевые потери ботов при сражении близки к 90%."
+  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 594, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/Applications/renpy-6.99.6-sdk/renpy/exports.py", line 1024, in say
+    what = what % tag_quoting_dict
+ValueError: incomplete format
 
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739

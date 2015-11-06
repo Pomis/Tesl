@@ -53,6 +53,12 @@ init:
 # Игра начинается здесь.
 label start:
 
+# reset the camera and layers positions and allow layers position to be saved.
+    $ camera_reset()
+    # It takes 0 second to move layers
+    $ layer_move("background", 2222)
+    $ layer_move("middle", 1700)
+    $ layer_move("forward", 1500)
     menu:
         "ch1 - ocean":
             jump ocean

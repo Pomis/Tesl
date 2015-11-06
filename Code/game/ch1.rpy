@@ -1,10 +1,5 @@
 label ocean:
-    # reset the camera and layers positions and allow layers position to be saved.
-    $ camera_reset()
-    # It takes 0 second to move layers
-    $ layer_move("background", 2222)
-    $ layer_move("middle", 1700)
-    $ layer_move("forward", 1500)
+    
     
     scene bg sky ocean onlayer background
     $ camera_move(0, -10000, 0, 0, 0)
