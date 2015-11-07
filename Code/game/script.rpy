@@ -48,6 +48,9 @@ init:
 
     # Эффекты
     $ flash = Fade(.25, 0, .45, color="#fff")
+
+    # Тестирование
+    $  testing = True;
     
 
 # Игра начинается здесь.
@@ -59,18 +62,20 @@ label start:
     $ layer_move("background", 2222)
     $ layer_move("middle", 1700)
     $ layer_move("forward", 1500)
-    menu:
-        "ch1 - ocean":
-            jump ocean
-        "ch2 - inferno":
-            jump rootInferno
-        "ch2 - soldier":
-            jump rootSoldier
-        "ch3 - warBase":
-            jump warBase
-        "ch3 - day1":
-            jump ch3day1
-
+    if testing==True:
+        menu:
+            "ch1 - ocean":
+                jump ocean
+            "ch2 - inferno":
+                jump rootInferno
+            "ch2 - soldier":
+                jump rootSoldier
+            "ch3 - warBase":
+                jump warBase
+            "ch3 - day1":
+                jump ch3day1
+    else:
+        jump ocean
 
 
                                                                                                                                                                                                                 
