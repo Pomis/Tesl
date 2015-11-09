@@ -50,7 +50,7 @@ init:
     $ flash = Fade(.25, 0, .45, color="#fff")
 
     # Тестирование
-    $  testing = True;
+    $  testing = False;
     
 
 # Игра начинается здесь.
