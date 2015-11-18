@@ -37,6 +37,8 @@ init:
     $ humorousPoints = 0
     $ brokenFinger = False
     $ inferno = True
+    $ killPoints = 0
+    $ spyPoints = 0
 
     # Статы с девушками
     $ yumingPoints = 0
