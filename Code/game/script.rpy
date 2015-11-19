@@ -47,6 +47,10 @@ init:
     $ mariePoints = 0
     $ minoriPoints = 0
 
+    # Отношения с другими персонажами
+    $ slavaPoints = 0
+    $ gantzPoints = 0
+
     # Позиции
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
     $ bottom = Position(xpos=0.4, xanchor='center', ypos=0.8)

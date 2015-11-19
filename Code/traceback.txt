@@ -1,20 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ch3.rpy", line 146, in script
-    ma "— Вот только использовать их мы можем только для обороны военной базы. У нас их всего около пятидесяти. Расчётные боевые потери ботов при сражении близки к 90%."
-ValueError: incomplete format
+  File "game/ch3.rpy", line 42, in script
+    if inferno==true:
+  File "game/ch3.rpy", line 42, in <module>
+    if inferno==true:
+NameError: name 'true' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ch3.rpy", line 146, in script
-    ma "— Вот только использовать их мы можем только для обороны военной базы. У нас их всего около пятидесяти. Расчётные боевые потери ботов при сражении близки к 90%."
-  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 594, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "/Applications/renpy-6.99.6-sdk/renpy/exports.py", line 1024, in say
-    what = what % tag_quoting_dict
-ValueError: incomplete format
+  File "game/ch3.rpy", line 42, in script
+    if inferno==true:
+  File "/Applications/renpy-6.99.6-sdk/renpy/ast.py", line 1612, in execute
+    if renpy.python.py_eval(condition):
+  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1477, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Applications/renpy-6.99.6-sdk/renpy/python.py", line 1472, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/ch3.rpy", line 42, in <module>
+    if inferno==true:
+NameError: name 'true' is not defined
 
 Darwin-14.5.0-x86_64-i386-64bit
 Ren'Py 6.99.6.739
