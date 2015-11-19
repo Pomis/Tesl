@@ -2,6 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/ch2inferno.rpy", line 35: Tab characters are not allowed in Ren'Py scripts.
+File "game/ch3day1.rpy", line 146: expected statement.
+    Вопросов вроде как не оказалось и наш названный Братуха Жорик начал свой ликбез, предварительно раздав листовки
+                                                                                   ^
+
+File "game/ch3day1.rpy", line 152: expected statement.
+    инфа про противника из файла на гитхабе про инферно
+                                                       ^
+
+File "game/ch3day1.rpy", line 160: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    "Однако тут было небольшое отличие - про каждое существо нам подробно объясняли как его убить."
+    ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

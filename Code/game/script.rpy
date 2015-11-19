@@ -32,6 +32,8 @@ image boat = im.FactorScale("images/boat.png",0.8,0.8)
 
 init:
     # Характеристика игрока
+    $ playerName = "гг"
+    $ playerFullName = "гг ггхович"
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
@@ -52,7 +54,9 @@ init:
     $ flash = Fade(.25, 0, .45, color="#fff")
 
     # Тестирование
-    $  testing = False;
+    $  testing = True;
+
+
     
 
 # Игра начинается здесь.
