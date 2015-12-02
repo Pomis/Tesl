@@ -27,7 +27,6 @@ image yuming angry = "images/yuming-angry.png"
 image yuming stupid = "images/yuming-stupid.png"
 image yuming sleepy = "images/yuming-sleeping.png"
 image yuming smiled = "images/yuming-smiled.png"
-image yuming = "images/yuming.png"
 image boat = im.FactorScale("images/boat.png",0.8,0.8)
 
 
