@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch3day1.rpy", line 181: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    nvl clear
-    ^
+File "game/ch3day1.rpy", line 164: expected simple expression
+    nvl show
+            ^
 
 Ren'Py Version: Ren'Py 6.99.6.739
