@@ -54,6 +54,7 @@ init:
 
     # Позиции
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
+    $ center2 = Position(xpos=0.5, xanchor='center')
     $ bottom = Position(xpos=0.4, xanchor='center', ypos=0.8)
 
     # Эффекты
