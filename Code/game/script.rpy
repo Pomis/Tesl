@@ -87,6 +87,8 @@ label start:
                 jump warBase
             "ch3 - day1":
                 jump ch3day1
+            "ch3 - day2":
+                jump ch3day2
     else:
         jump ocean
 
