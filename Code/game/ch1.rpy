@@ -5,7 +5,7 @@ label ocean:
     $ camera_move(0, -10000, 0, 0, 0)
 
     $ camera_moves( ( (160, -10030, 0, 0, 2, 'ease'),(0, -10000, 0, 0, 4, 'ease') ), loop=True)
-    play music "music/123.mp3"
+    play music "music/123.ogg"
     # scene bg sky
     with fade
     "Я открыл глаза. Всего лишь небо и больше ничего. Слепяще белые облака. Ярко голубое пространство, простирающееся на миллиарды километров ввысь."

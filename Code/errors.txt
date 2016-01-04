@@ -2,16 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch3day2.rpy", line 44: reached end of line when expecting ':'.
-    elif result == "lab"
-                        ^
-
-File "game/ch3day2.rpy", line 47: expected statement.
-    elif result == "hungar"
-                ^
-
-File "game/ch3day2.rpy", line 50: expected statement.
-    elif result == "tir"
-                ^
+File "game/ch3.rpy", line 45: end of line expected.
+    show marie smiling at left onlayer semi-background
+                                           ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

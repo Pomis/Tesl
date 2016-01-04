@@ -5,7 +5,7 @@
 
 init python:
     # Слои камеры
-    register_3d_layer('background', 'middle', 'forward')
+    register_3d_layer('background','middle', 'forward')
 
 # Определение сцен
 image bg ocean = "images/ocean.jpg"

@@ -9,6 +9,7 @@ init:
     image bg mountains = "images/mountains.jpg"
     image bg mountains middle = "images/mountains-mid.png"
     image bg mountains forward = "images/mountains-front.png"
+    image bg hangar = "images/hangar.png"
 
     image marie smiling = "images/marie-smiling.png"
     image marie shamed = "images/marie-shamed.png"
@@ -36,11 +37,15 @@ label warBase:
     "— У меня бы язык не повернулся назвать это въездом..."
     if inferno==False:
         "Юминг тем временем вообще уснула. Как вообще можно было уснуть в такой ситуации? Мы влетели на вертолёте в горный лифт!"
+    scene bg hangar onlayer background
+    $ camera_move(8000,0,472,0)
     "Наконец, лифт закончил движение. Мы оказались в просторном ангаре. {w}Интересно, а сопровождающие вертолёты куда приземлились?"
     gen "— Сперва тебе нужно пройти регистрацию и медицинское обследование. Тебя сопроводят."
     "— Хм, понятно."
+    show marie smiling at left onlayer background
     if inferno==True:
         ma "Генерал, а где Юминг?"
+        $ camera_move(-8000,0,472,0, 1.5, "easeout")
         "Услышав это имя, я сразу напрягся и развернулся в сторону голоса"
         "Им оказалась молодая девушка в белом халате с обеспокоенным лицом"
         #Рисунок обеспокоенной Марии
@@ -55,7 +60,7 @@ label warBase:
         ma "А взрослые не могут обниматься?"
         yu "Могут, но... Хотя забей"
         #Наверное нужен будет рисунок их обнимашек.
-    show marie smiling at left onlayer background with dissolve
+    
     ma "— Меня зовут Мария. Добро пожаловать на базу TESL."
     "— Как ты назвала это место?"
     ma "— И мне очень приятно познакомиться. Это база входящая в комплекс TESL — последняя надежда на защиту человечества от нападений Инферно."
