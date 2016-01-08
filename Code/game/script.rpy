@@ -38,10 +38,15 @@ init:
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
-    $ brokenFinger = False
-    $ inferno = True
+    
     $ killPoints = 0
     $ spyPoints = 0
+
+    # Логические переменные
+    $ brokenFinger = False # Сосед по палате сломал палец
+    $ inferno = True # Сценарий Инферно
+    $ visitedLab = False # Посетил лабораторию
+    $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
 
     # Статы с девушками
     $ yumingPoints = 0
