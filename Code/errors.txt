@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch3.rpy", line 45: end of line expected.
-    show marie smiling at left onlayer semi-background
-                                           ^
+File "game/ch3day2.rpy", line 5: invalid syntax
+    im.FactorScale(marie smiling, 0.5, 0.5)
+                                ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

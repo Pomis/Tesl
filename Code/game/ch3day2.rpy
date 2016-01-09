@@ -1,5 +1,10 @@
 init:
     image bg hangar ships = "images/hangar-ships.png"
+    image bg laba front = "images/laba-front.png"
+    image bg laba back = "images/laba-back.png"
+    image bg laba opened = "images/laba-opened.png"
+    image marie scaled smiling = im.FactorScale("images/marie-smiling.png", 0.26, 0.26)
+    image marie scaled shamed = im.FactorScale("images/marie-shamed.png", 0.26, 0.26)
 label ch3day2:
     co "— РОТА ПОДЪЁМ!"
     "Ох... Моё тело. {w}Почему всё так болит?"
@@ -49,18 +54,46 @@ label ch3day2:
         # Сходил в лабу, возвращается в класс, в тот момент, когда все уходят в ангар.
         "Лучше схожу в лабораторию, думаю, там я узнаю больше полезной информации."
         $ mariePoints += 1
+        
         if inferno == True:
             "Может смогу найти что-то секретное."
         "Я нажал на изображение лаборатории на экране и лифт тронулся."
         "С уровнем доступа \"А\" я могу попасть почти в любое помещение военной базы"
         "Не слишком ли сильно нам доверяют? Хотя, не удивлюсь, что каждый шаг отслеживается, и нам специально дали такую свободу действий."
+        show bg laba back onlayer background
+        show bg laba front onlayer forward
         if promisedMarie == True:
             $ mariePoints += 1
             "Спустя пару минут я снова оказался в этом странном футуристическом помещении. Повсюду были какие-то опытные образцы, ну и бардак."
         "Спустя пару минут я оказался в этом странном футуристическом помещении. Повсюду были какие-то опытные образцы, ну и бардак."
+        
+        show marie scaled smiling onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
         "Мария что-то доказывала своим коллегам, рисуя на доске маркером схемы."
+        show marie scaled shamed onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
         "Увидев меня через стекло переговорной комнаты, она немного смутилась. Не думала, что я действительно приду, наверное."
-        "Теперь мне придётся её ждать. "
+        show marie scaled smiling onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
+        "На этот раз мне придётся ждать. Поброжу по лаборатории, что ли..."
+        "Учёные занимались своими делами и не обращали на меня особого внимания."
+        menu: 
+            "Попытаться свистнуть что-нибудь":
+                "Ну раз всем пофигу на меня, можно попробовать..."
+                "Я осматриваюсь по сторонам.{w} Никто не смотрит на меня."
+                "Оглянулся в сторону переговорной комнаты."
+                "Плавным движением положил себе в карман какую-то флешку."
+                if inferno==False:
+                    "И зачем она мне? Может там важные данные об Инферно? Или ещё чего..."
+            "Спокойно ждать Марию":
+                "Что-то не хочется рисковать..."
+                if inferno==False:
+                    "Да и зачем??"
+        show marie scaled smiling onlayer middle at Move((0.44, 0.36), (0.1, 0.36), 1.0, xanchor="center", yanchor="center")
+        "Через несколько минут дверь переговорной открылась, и из неё вышло несколько людей в военной форме и двое учёных в возрасте."
+        hide bg onlayer background
+        hide bg onlayer forward
+        hide marie onlayer middle
+        scene bg laba opened
+        "Вид у них был неважный. Как будто бы пенсии лишили."
+        "За ними вышла Мария, она сразу стала искать меня глазами, а когда увидела подбежала ко мне."
 
     elif result == "hungar":
         # Осматривает военную технику. Потом в ангар приходит координатор и остальные новички
