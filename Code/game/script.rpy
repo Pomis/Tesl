@@ -22,6 +22,7 @@ image bg lift = "images/lift.png"
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
+define sis = Character('Тоня', color='#d27a1c')
 image yuming shamed = "images/yuming-shamed.png"
 image yuming angry = "images/yuming-angry.png"
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
@@ -34,12 +35,13 @@ image boat = im.FactorScale("images/boat.png",0.8,0.8)
 
 init:
     # Характеристика игрока
-    $ playerName = "гг"
-    $ playerFullName = "гг ггхович"
+    $ playerName = "Грег"
+    $ playerFullName = "Грег Гильдин"
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
     
+    # Очки, влияющие на качество выполнения действий, требующих специальных знаний
     $ killPoints = 0
     $ spyPoints = 0
 
