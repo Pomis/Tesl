@@ -16,6 +16,7 @@ init:
 
 
 label warBase:
+    hide yuming onlayer forward
     scene bg mountains onlayer background
     show bg mountains forward onlayer forward at center
     show bg mountains middle onlayer middle
