@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch3day2.rpy", line 5: invalid syntax
-    im.FactorScale(marie smiling, 0.5, 0.5)
-                                ^
+File "game/ch3day2.rpy", line 368: expected statement.
+    "Чёрта с два! Я сваливаю!":
+                              ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

@@ -23,8 +23,14 @@ image bg lift = "images/lift.png"
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
 define sis = Character('Тоня', color='#d27a1c')
+
+define alil = Character('Алулим', color="#c8ffc8")
+define ush = Character('Уш', color="#c8ffc8")
+
 image yuming shamed = "images/yuming-shamed.png"
 image yuming angry = "images/yuming-angry.png"
+
+
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming stupid = "images/yuming-stupid.png"
 image yuming sleepy = "images/yuming-sleeping.png"
@@ -50,6 +56,11 @@ init:
     $ inferno = True # Сценарий Инферно
     $ visitedLab = False # Посетил лабораторию
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
+    $ withMarieInHangar = False # Вместе с Марией в ангаре
+
+    # Жив ли персонаж
+    $ jorikAlive = True
+    $ slavaAlive = True
 
     # Статы с девушками
     $ yumingPoints = 0
