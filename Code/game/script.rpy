@@ -18,6 +18,7 @@ image bg hospital room sunset = "images/013_BG_005B.jpg"
 image bg hospital reg = "images/rega.jpg"
 image bg hospital = "images/buildings_107.jpg"
 image bg lift = "images/lift.png"
+image rage = "images/rage.png"
 
 # Определение персонажей игры.
 define yu = Character('Юминг', color="#c8ffc8")
@@ -78,6 +79,7 @@ init:
 
     # Эффекты
     $ flash = Fade(.25, 0, .45, color="#fff")
+    $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
     $  testing = True;

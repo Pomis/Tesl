@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ch3day2.rpy", line 368: expected statement.
-    "Чёрта с два! Я сваливаю!":
-                              ^
+File "game/ch1.rpy", line 180: invalid syntax
+    camera_move(500, -1500, 500, 0, 1, 'easeout') with bloodrage
+                                                      ^
+    
 
 Ren'Py Version: Ren'Py 6.99.6.739
