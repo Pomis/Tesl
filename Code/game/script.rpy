@@ -58,6 +58,9 @@ init:
     $ visitedLab = False # Посетил лабораторию
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
     $ withMarieInHangar = False # Вместе с Марией в ангаре
+    $ heardAboutTitan = False # Слышал о титанах до лекции в классе
+    $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
+    $ knowYumingRoom = False # Знает комнату Юминг.
 
     # Жив ли персонаж
     $ jorikAlive = True
