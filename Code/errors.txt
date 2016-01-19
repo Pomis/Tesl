@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch1.rpy", line 180: invalid syntax
-    camera_move(500, -1500, 500, 0, 1, 'easeout') with bloodrage
-                                                      ^
-    
+File "game/ch2soldier.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "— Кто главный в Инферно?"
+                              ^
 
 Ren'Py Version: Ren'Py 6.99.6.739

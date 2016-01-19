@@ -24,11 +24,13 @@ image rage = "images/rage.png"
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
 define sis = Character('Тоня', color='#d27a1c')
+define co0 = Character('Парень со странной причёской', color="#c8ffc8") # Координатор до знакомства
 define co = Character('Координатор', color="#c8ffc8")
 define nn2 = Character('NoName2', color="#c8ffc8")
 define mi = Character('Минори', color="#fbc072")
 define man = Character('Чувак', color="#c8ffc8")
 define sl = Character('Слава', color="#c8ffc8")
+define pav = Character('Павел', color="#c8ffc8")
 
 define nvlc = Character('', kind=nvl)
 define alil = Character('Алулим', color="#c8ffc8")
@@ -67,6 +69,7 @@ init:
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
+    $ wonChess = False # Победил Жорика в шахматы
 
     # Жив ли персонаж
     $ jorikAlive = True
