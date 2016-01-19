@@ -23,13 +23,6 @@
 
 
 init:
-    define co = Character('Координатор', color="#c8ffc8")
-    define nn2 = Character('NoName2', color="#c8ffc8")
-    define mi = Character('Минори', color="#fbc072")
-    define man = Character('Чувак', color="#c8ffc8")
-    define sl = Character('Слава', color="#c8ffc8")
-
-    define nvlc = Character('', kind=nvl)
 
     image coordinator serious = "images/coord-serious.png"
     image coordinator smile = "images/coord-smile.jpg"

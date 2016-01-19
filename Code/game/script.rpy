@@ -24,7 +24,13 @@ image rage = "images/rage.png"
 define yu = Character('Юминг', color="#c8ffc8")
 define g = Character('Незнакомка', color="#c8ffc8")
 define sis = Character('Тоня', color='#d27a1c')
+define co = Character('Координатор', color="#c8ffc8")
+define nn2 = Character('NoName2', color="#c8ffc8")
+define mi = Character('Минори', color="#fbc072")
+define man = Character('Чувак', color="#c8ffc8")
+define sl = Character('Слава', color="#c8ffc8")
 
+define nvlc = Character('', kind=nvl)
 define alil = Character('Алулим', color="#c8ffc8")
 define ush = Character('Уш', color="#c8ffc8")
 
