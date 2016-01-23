@@ -94,7 +94,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $  testing = False;
+    $  testing = True;
 
 
     
@@ -118,6 +118,8 @@ label start:
                 jump rootSoldier
             "ch3 - warBase":
                 jump warBase
+            "ch3 - chess":
+                jump grossmeister
             "ch3 - day1":
                 jump ch3day1
             "ch3 - day2":

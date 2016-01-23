@@ -3,7 +3,6 @@ label ocean:
     
     scene bg sky ocean onlayer background
     $ camera_move(0, -10000, 0, 0, 0)
-
     $ camera_moves( ( (160, -10030, 0, 0, 2, 'ease'),(0, -10000, 0, 0, 4, 'ease') ), loop=True)
     play music "music/123.ogg"
     # scene bg sky

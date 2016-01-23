@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/ch2soldier.rpy", line 76: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "— Кто главный в Инферно?"
-                              ^
+File "game/ch3.rpy", line 309: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    if result == "first":
+    ^
 
 Ren'Py Version: Ren'Py 6.99.6.739
