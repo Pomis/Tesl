@@ -2,8 +2,6 @@
 errors listed below, and try again.
 
 
-File "game/ch3.rpy", line 309: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    if result == "first":
-    ^
+File "game/ch2inferno.rpy", line 155: indentation mismatch.
 
 Ren'Py Version: Ren'Py 6.99.6.739
