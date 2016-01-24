@@ -70,6 +70,7 @@ init:
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
     $ playedChess = False # Играл в шахматы со странным типом
+    $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
 
 
     # Жив ли персонаж
