@@ -55,12 +55,15 @@ init:
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
+    $ antistrangerPoints = 0
+    # bulka: Скорее всего уникальная переменная для рута инферно. Вряд ли пригодится в солдатском руте.
     
     # Очки, влияющие на качество выполнения действий, требующих специальных знаний
     $ killPoints = 0
     $ spyPoints = 0
 
     # Логические переменные
+    $ chesspoints = False # bulka: Я просто заебался работать с этими условиями для одного выражения. Рабочая переменная. Символизирует признание уровня игры.    
     $ brokenFinger = False # Сосед по палате сломал палец
     $ inferno = True # Сценарий Инферно
     $ visitedLab = False # Посетил лабораторию
@@ -85,6 +88,7 @@ init:
     # Отношения с другими персонажами
     $ slavaPoints = 0
     $ gantzPoints = 0
+    $ strangerPoints = 0
 
     # Позиции
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
