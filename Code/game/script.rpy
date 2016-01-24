@@ -72,7 +72,8 @@ init:
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
-    $ playedChess = False # Играл в шахматы со странным типом
+    $ playedChess = False # Играл в шахматы с Тенко
+    $ seenChessGame = False # Видел, как Тенко играет в шахматы
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
 
 

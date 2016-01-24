@@ -2,6 +2,20 @@
 errors listed below, and try again.
 
 
-File "game/ch2inferno.rpy", line 155: indentation mismatch.
+File "game/ch3day1.rpy", line 175: else clause expects a non-empty block.
+    else: 
+          ^
+
+File "game/ch4.rpy", line 26: expected statement.
+    usedDirectRadio = True
+                    ^
+
+File "game/ch4.rpy", line 77: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Думаю, они бы тут особо и не помогли."
+                                           ^
+
+File "game/ch4.rpy", line 86: else clause expects a non-empty block.
+    else:
+         ^
 
 Ren'Py Version: Ren'Py 6.99.6.739
