@@ -69,7 +69,8 @@ init:
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
-    $ wonChess = False # Победил Жорика в шахматы
+    $ playedChess = False # Играл в шахматы со странным типом
+
 
     # Жив ли персонаж
     $ jorikAlive = True
