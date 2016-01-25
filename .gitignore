@@ -18,3 +18,7 @@ Code/tmp/distribute.txt
 Code/tmp/Info.plist
 
 Code/tmp/lint.txt
+
+*.zip
+
+*.txt

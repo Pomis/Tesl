@@ -35,6 +35,7 @@ define pav = Character('Павел', color="#c8ffc8")
 define nvlc = Character('', kind=nvl)
 define alil = Character('Алулим', color="#c8ffc8")
 define ush = Character('Уш', color="#c8ffc8")
+define usa = Character('Военнослужащий США', color="#c9ffc8")
 
 image yuming shamed = "images/yuming-shamed.png"
 image yuming angry = "images/yuming-angry.png"
@@ -59,22 +60,26 @@ init:
     # bulka: Скорее всего уникальная переменная для рута инферно. Вряд ли пригодится в солдатском руте.
     
     # Очки, влияющие на качество выполнения действий, требующих специальных знаний
-    $ killPoints = 0
-    $ spyPoints = 0
+    $ killPoints = 0 # Умение обращаться с оружием
+    $ spyPoints = 0 # Умение подслушивать, воровать, следить
+    $ liePoints = 0 # Умение врать, льстить
 
     # Логические переменные
     $ chesspoints = False # bulka: Я просто заебался работать с этими условиями для одного выражения. Рабочая переменная. Символизирует признание уровня игры.    
     $ brokenFinger = False # Сосед по палате сломал палец
-    $ inferno = True # Сценарий Инферно
+    $ inferno = False # Сценарий Инферно
     $ visitedLab = False # Посетил лабораторию
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
     $ withMarieInHangar = False # Вместе с Марией в ангаре
+    $ stolenFlash = False # Украл флешку из лаборатории
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
+    $ visitedYumingRoom = False # Был в комнате Юминг
     $ playedChess = False # Играл в шахматы с Тенко
     $ seenChessGame = False # Видел, как Тенко играет в шахматы
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
+
 
 
     # Жив ли персонаж
@@ -101,7 +106,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $  testing = True;
+    $  testing = False;
 
 
     
