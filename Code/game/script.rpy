@@ -79,6 +79,8 @@ init:
     $ playedChess = False # Играл в шахматы с Тенко
     $ seenChessGame = False # Видел, как Тенко играет в шахматы
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
+    $ wonchess = False # результат игры
+    $ useless = False # Очередная переменная для избежания сотни условий
 
 
 
