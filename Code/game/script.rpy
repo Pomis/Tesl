@@ -82,12 +82,15 @@ init:
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
     $ wonchess = False # результат игры
     $ useless = False # Очередная переменная для избежания сотни условий (pomis: опять же, странное название) (bulka: первое что пришло в голову. Юзлесс, ибо, скорее всего, одноразовая. Если что, то с помощью нотпада++ можно будет сразу везде заменить.)
-
-
+    $ withMinoriOnZumwalt = False # Зачищает помещения Zumwalt вместе с Минори
+    $ ushWonded = False # Уш ранен из пистолета
 
     # Жив ли персонаж
+    $ yumingAlive = True # Я так понимаю, будут возможны переходы из солдатского рута в инферно, то есть, возможна ситауация, когда игрок в руте инферно, а юминг жива, так что, эта переменная пригодится.
     $ jorikAlive = True
     $ slavaAlive = True
+    $ ushAlive = True
+    $ minoriAlive = True
 
     # Статы с девушками
     $ yumingPoints = 0
@@ -139,6 +142,8 @@ label start:
                 jump ch3day1
             "ch3 - day2":
                 jump ch3day2
+            "ch4":
+                jump ch4
     else:
         jump ocean
 
