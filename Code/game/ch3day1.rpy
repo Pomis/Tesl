@@ -181,7 +181,7 @@ label ch3day1:
                     stranger "— [playerName] значит. Буду знать."
                     if strangerPoints>0:
                         "Тенко загадочно улыбнулся. Какая-то неприятная у него улыбка."
-                        if antistrangerPoints == 0:
+                        if strangerAfraidPoints == 0:
                             "От его улыбки по спине пробежал неприятный холодок."
             else:
                 if seenChessGame:
@@ -208,13 +208,13 @@ label ch3day1:
             stranger "— Я вижу людей насквозь."
             "Тенко стал всматриваться в меня. Он что, буквально пытается просмотреть меня насквозь?"
             if inferno:
-                # Тут были закосячены отступы, исправил
+                # Тут были закосячены отступы, исправилa
                 if strangerPoints>0:
                     stranger "— Так. А ты не так прост как кажешься на первый взгляд. Уже убивал?"
-                    if antistrangerPoints>0:
+                    if strangerAfraidPoints>0:
                         "— Нет конечно. С чего ты взял?"
                         
-                        if antistrangerPoints>1 or liePonts>0:
+                        if strangerAfraidPoints>1 or liePonts>0:
                             $ liePonts += 1
                             stranger "— Вот как? Значит я ошибся. А мне казалось я разбираюсь в людях."
                             "Хэх. Не на того напал. Меня так легко не раскусишь."
