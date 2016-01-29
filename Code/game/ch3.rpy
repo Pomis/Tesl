@@ -19,7 +19,7 @@ init:
     image marie shamed = "images/marie-shamed.png"
     image chess = "images/chess.jpg"
     image chess hovered = "images/chess-hovered.jpg"
-
+    image bg coridor = "images/coridor.png"
 
 label warBase:
     hide yuming onlayer forward
@@ -220,10 +220,14 @@ label warBase:
 label goHome:
     "Мне уже надоело слушать Марию, хотелось бы узнать, где я буду жить."
     "Едва заметно вздохнув она встала и вызвала лифт."
+    scene bg lift with dissolve
+    show marie smiling at center2 
     ma "— Пошли, покажу..."
     "Она нажала на экран в лифте, выбрала какой-то элемент. Лифт сразу же начал набирать скорость."
     "И правда, чем-то похоже на метро."
     "Может, шумом? {w}Зато быстро. "
+    scene bg coridor with dissolve
+    show marie smiling at right
     ma "— Это жилой корпус новобранцев. Твоя комната N04. Найдёшь, надеюсь."
     "— Найду... И сразу пойду спать."
     if visitedLab == True:
