@@ -3,8 +3,8 @@ init:
     define pi = Character('Пилот', color="#e1e4e1")
     define ma = Character('Мария', color="#faf0b8")
     define sl = Character('Слава', color="#faf0b8")
-    define stranger = Character('Странный', color="#e1e4e1")
-    define str_nvl = Character('Странный', color="#e1e4e1", kind=nvl)
+    define stranger = Character('Странный', color="#8c8c8c")
+    define str_nvl = Character('Странный', color="#8c8c8c", kind=nvl)
     # bulka: Цвет можно заменить, просто скопировал, имя временное, пока не придумал
     define golos = Character('Голос', color="#f8349f")
     define regf = Character('Офицер', color="#f8349f")

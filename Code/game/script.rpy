@@ -31,6 +31,7 @@ define mi = Character('Минори', color="#fbc072")
 define man = Character('Чувак', color="#c8ffc8")
 define sl = Character('Слава', color="#c8ffc8")
 define pav = Character('Павел', color="#c8ffc8")
+define ten = Character('Тенко', color='#8c8c8c')
 
 define nvlc = Character('', kind=nvl)
 define alil = Character('Алулим', color="#c8ffc8")
@@ -82,6 +83,7 @@ init:
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
     $ wonchess = False # результат игры
     $ useless = False # Очередная переменная для избежания сотни условий (pomis: опять же, странное название) (bulka: первое что пришло в голову. Юзлесс, ибо, скорее всего, одноразовая. Если что, то с помощью нотпада++ можно будет сразу везде заменить.)
+    $ knowTenkoName = False # ГГ уже знает имя Тенко. 
     $ withMinoriOnZumwalt = False # Зачищает помещения Zumwalt вместе с Минори
     $ ushWonded = False # Уш ранен из пистолета
 
