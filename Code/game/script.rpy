@@ -106,6 +106,7 @@ init:
     $ center = Position(xpos=0.5, xanchor='center', ypos=0.7)
     $ center2 = Position(xpos=0.5, xanchor='center')
     $ bottom = Position(xpos=0.4, xanchor='center', ypos=0.8)
+    $ left2 = Position(xpos=0.1, ypos=1.1)
 
     # Эффекты
     $ flash = Fade(.25, 0, .45, color="#fff")
@@ -138,6 +139,8 @@ label start:
                 jump warBase
             "ch3 - chess":
                 jump grossmeister
+            "ch3 - yuming room":
+                jump inYumingRoom
             "ch3 - day1":
                 jump ch3day1
             "ch3 - day2":
