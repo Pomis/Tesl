@@ -22,3 +22,6 @@ Code/tmp/lint.txt
 *.zip
 
 *.txt
+*.txt
+
+Code/traceback.txt

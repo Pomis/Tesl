@@ -112,7 +112,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $  testing = False;
+    $  testing = True;
 
 
     
