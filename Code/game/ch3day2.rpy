@@ -439,6 +439,13 @@ label hangardefault:
         ten "— Тенко. Будем знакомы."
     
     scene bg zumwalt coords with dissolve
+    show point:
+        alpha 0.0 xalign 0.4 yalign 0.7
+        linear 1.0 alpha 1.0
+        repeat
+    show text zumwalt:
+        xalign 0.5 yalign 0.9
+    with dissolve
     $ renpy.pause()
     scene bg sky ocean with flash
     ush "— Алулим! Ты где?!"

@@ -35,6 +35,7 @@ label rootInferno:
     play music "music/Alasdair_Cooper_-_06_-_2044.mp3"
     "Её полный энтузиазма голос заглох после звука тупого удара передатчика о её висок. "
     $ killedPeopleCount += 1
+    $ inferno = True
     $ yumingAlive = False
     hide yuming onlayer forward with fade
     "Это ОНА уничтожила корабль. {w} Мы были приманкой."

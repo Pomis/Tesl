@@ -8,6 +8,7 @@ init python:
     register_3d_layer('background','middle', 'forward')
 
 # Определение сцен
+image bg mediterranean = "images/mediterranean.jpg" 
 image bg ocean = "images/ocean.jpg"
 image bg sky = "images/sky.jpg"
 image bg sky ocean = "images/sky-ocean.jpg"
@@ -39,14 +40,33 @@ define alil = Character('Алулим', color="#c8ffc8")
 define ush = Character('Уш', color="#c8ffc8")
 define usa = Character('Военнослужащий США', color="#c9ffc8")
 
+# Спрайты персонажей
 image yuming shamed = "images/yuming-shamed.png"
 image yuming angry = "images/yuming-angry.png"
+
+image marie smiling = "images/marie-smiling.png"
+image marie shamed = "images/marie-shamed.png"
+
+# Плейсхолдеры
+image slava smiling = Placeholder("boy")
+image slava serious = Placeholder("boy")
+image slava laughing = Placeholder("boy")
+
+image gantz serious = Placeholder("boy")
+
+image tenko = Placeholder("boy")
+image tenko thinking = Placeholder("boy")
 
 
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming = "images/yuming.png"
 image yuming night = im.MatrixColor("images/yuming.png",im.matrix.tint(0.4, 0.4, 0.6))
+
+# Разное
+image point = "images/point.png"
 image boat = im.FactorScale("images/boat.png",0.8,0.8)
+image text start = Text("{cps=18}{size=28}{color=#92f8ff}2049 год. Где-то в Средиземном море.{/color}{/size}{/cps}", slow=3)
+image text zumwalt = Text("{cps=18}{size=28}{color=#92f8ff}В это же время. Где-то в Тихом океане.{/color}{/size}{/cps}", slow=3)
 
 
 init:
