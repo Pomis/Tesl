@@ -21,8 +21,8 @@ image bg lift = "images/lift.png"
 image rage = "images/rage.png"
 
 # Определение персонажей игры.
-define yu = Character('Юминг', color="#c8ffc8")
-define g = Character('Незнакомка', color="#c8ffc8")
+define yu = Character('Юминг', color="#a78ddf")
+define g = Character('Незнакомка', color="#a78ddf")
 define sis = Character('Тоня', color='#d27a1c')
 define co0 = Character('Парень со странной причёской', color="#c8ffc8") # Координатор до знакомства
 define co = Character('Координатор', color="#c8ffc8")
@@ -44,10 +44,8 @@ image yuming angry = "images/yuming-angry.png"
 
 
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
-image yuming stupid = "images/yuming-stupid.png"
-image yuming sleepy = "images/yuming-sleeping.png"
-image yuming smiled = "images/yuming-smiled.png"
 image yuming = "images/yuming.png"
+image yuming night = im.MatrixColor("images/yuming.png",im.matrix.tint(0.4, 0.4, 0.6))
 image boat = im.FactorScale("images/boat.png",0.8,0.8)
 
 
