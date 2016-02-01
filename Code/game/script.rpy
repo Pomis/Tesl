@@ -48,6 +48,9 @@ image marie smiling = "images/marie-smiling.png"
 image marie shamed = "images/marie-shamed.png"
 
 # Плейсхолдеры
+image tonya happy = Placeholder("girl")
+image tonya scared = Placeholder("girl")
+
 image slava smiling = Placeholder("boy")
 image slava serious = Placeholder("boy")
 image slava laughing = Placeholder("boy")
@@ -56,6 +59,9 @@ image gantz serious = Placeholder("boy")
 
 image tenko = Placeholder("boy")
 image tenko thinking = Placeholder("boy")
+
+image pavel tired = Placeholder("boy")
+image pavel afraid = Placeholder("boy")
 
 
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
