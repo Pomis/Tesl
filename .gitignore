@@ -25,3 +25,5 @@ Code/tmp/lint.txt
 *.txt
 
 Code/traceback.txt
+
+*.bak

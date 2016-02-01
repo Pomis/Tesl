@@ -1,5 +1,6 @@
 init:
     image bg hangar ships = "images/hangar-ships.png"
+    image bg poligon tir = "images/poligon-tir.png"
     image bg laba front = "images/laba-front.png"
     image bg laba back = "images/laba-back.png"
     image bg laba opened = "images/laba-opened.png"
@@ -35,6 +36,8 @@ label ch3day2:
         "Стоит в защитных наушниках и стреляет из калаша по голограммам."
         "Кажется я его уже где-то видел."
         "Я взял со стены калаш, чтобы тоже пострелять. Отточу свои умения. Раньше мне максимум доводилось стрелять из пневматики по банкам. Ну и несколько выстрелов из боевого автомата на военных сборах в классе десятом. Или в девятом. Уже не помню."
+        scene bg poligon tir with dissolve
+        show pavel tired at left with dissolve
         pav0 "— О, кажется тебя знаю. Чего не на занятиях?"
         "Точно. Он тоже из нашего отряда."
         "— Тот же вопрос хотел бы задать тебе. Мне просто не захотелось идти."
@@ -141,6 +144,8 @@ label ch3day2:
             noname "— Отомстить? Уверен?"
             "Задрали."
             "— Эй! Слышите меня там?"
+            noname "— Прекрасно тебя слышу. "
+            "— "
         else:
             "Ну не буду же я навязывать свою компанию?"
             "— Ладно, пойду я... Тебя как зовут-то?"
