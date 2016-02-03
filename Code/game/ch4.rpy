@@ -1,9 +1,5 @@
-image bg underwater = "images/underwater.jpg"
-image bg zumwalt attacked = "images/zumwalt-attacked.png"
-image bg zumwalt boarting = "images/zumwalt-boarting.png"
-
 label ch4:
-    scene bg sky ocean with flash
+    scene bg ocean day with flash
     alil "— Капитан, как и ожидалось, земная авиация в пути. Расчётное время до нападения — 15 минут."
     ush "— У этого корабля нет никаких шансов в одиночку противостоять авиации. Хоть тут и есть средства ПВО и ПРО, толку от них против группы истребителей будет мало. Разве что ракетный залп отразить сможем. Ломаем базу и сваливаем."
     # bulka: против чего?
@@ -432,7 +428,7 @@ label reunion:
 
     #
     #   РАЗВИЛКИ.
-    #
+    #   pomis: Предлагаю в одной из развилок добавить перемещение в прошлое
     if inferno and ushAlive: # Один из вариантов инферно-сценария. Другой вариант будет, если гг пойдёт в тир, вместо ангара в ch3day2
         jump ch5enlil
     elif inferno==False and mariePoints>3: # Не зависит от того, брал ли игрок Марию с собой в лодке. Она в любом случае жива на этот момент. Глава для солдата.

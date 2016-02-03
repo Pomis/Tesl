@@ -5,18 +5,15 @@
 #   А также, можно редактировать флешбеки в хронологическом порядке
 #
 
-image bg cruise = "images/cruise.png"
-image bg cruise crashed = "images/cruise-crashed.png"
-
 label flashback1:
-    scene bg ship crashed onlayer background with flash
+    scene bg crash onlayer background with flash
     "В голове начали вспыхивать образы прошедших событий: мельтешение людей, крики, большой круизный лайнер, накренившийся и объятый огнём, яркие звёзды над головой и холодный ветер."
     #  bulka:Тут должен воспроизвестись файл с криками людей. Будет идеально. Его чуток порезать надо ток.
     "Картинки в моей голове сложились в целое и безысходность начала наполнять мою душу. "
     "\"Этого не может быть.{w} Нет-нет, это сон или всё что угодно, но это не реальность и происходит не со мной\""
     # Фон: палуба корабля
     hide bg onlayer background
-    scene bg cruise
+    scene bg cruise ok
     show tonya happy:
         xalign 0.7 yalign 0.5
     sis "— Я никогда не видела столько звёзд на небе!"
@@ -40,7 +37,7 @@ label flashback1:
     return
 
 label flashback2:
-    scene bg ship crashed onlayer background with flash
+    scene bg crash onlayer background with flash
     sis "— Бра-а-а-ат! Помоги-и-и!"
     "Тоня всё сильнее удалялась от меня и вскоре скрылась в морской пучине. Я держался за выступающий  на палубе штырь."
     "Моя часть корабля уже наклонилась на столько, что я висел на этом штыре, почти как на турнике."

@@ -8,24 +8,11 @@ init:
     # bulka: Цвет можно заменить, просто скопировал, имя временное, пока не придумал
     define golos = Character('Голос', color="#f8349f")
     define regf = Character('Офицер', color="#f8349f")
-    image bg entrace = "images/entrace.jpg"
-    image bg mountains = "images/mountains.jpg"
-    image bg mountains middle = "images/mountains-mid.png"
-    image bg mountains forward = "images/mountains-front.png"
-    image bg hangar = "images/hangar.png"
-    image bg room = "images/room.jpg"
-    image bg coridor reg = "images/coridor-r.png"
-    image bg yuming room = "images/yu-room.png"
-    image bg diner = "images/diner.png"
-    image chess = "images/chess.jpg"
-    image chess hovered = "images/chess-hovered.jpg"
-    image bg coridor = "images/coridor.png"
-    image bg coridor second = "images/coridor-e.png"
 
 label warBase:
     hide yuming onlayer forward
     hide boat onlayer middle
-    scene bg mountains onlayer background
+    scene bg mountains back onlayer background
     show bg mountains forward onlayer forward at center
     show bg mountains middle onlayer middle
     $ camera_move(0, -2000, 0, 0, 0)
@@ -48,7 +35,7 @@ label warBase:
     "— У меня бы язык не повернулся назвать это въездом..."
     if inferno==False:
         "Юминг тем временем вообще уснула. Как вообще можно было уснуть в такой ситуации? Мы влетели на вертолёте в горный лифт!"
-    scene bg hangar onlayer background
+    scene bg hangar pano onlayer background
     $ camera_move(8000,0,472,0)
     "Наконец, лифт закончил движение. Мы оказались в просторном ангаре. {w}Интересно, а сопровождающие вертолёты куда приземлились?"
     gen "— Сперва тебе нужно пройти регистрацию и медицинское обследование. Тебя сопроводят."
@@ -235,7 +222,7 @@ label goHome:
     "Она нажала на экран в лифте, выбрала какой-то элемент. Лифт сразу же начал набирать скорость."
     "И правда, чем-то похоже на метро."
     "Может, шумом? {w}Зато быстро. "
-    scene bg coridor with dissolve
+    scene bg coridor newbies with dissolve
     show marie smiling at right
     ma "— Это жилой корпус новобранцев. Твоя комната N04. Найдёшь, надеюсь."
     "— Найду... И сразу пойду спать."
@@ -252,7 +239,7 @@ label goHome:
                 ma "— Ну и зануда."
                 ma "— Ладно, я пошла..."
     hide marie with dissolve
-    scene bg room
+    scene bg room mine
     "Я вошёл в свою комнату. Довольно тесноватая, как в общежитии. Искусственное окно. Соседа не было, хотя стояло две кровати."
     if inferno == True:
         "Как-то совсем не хочется проходить этот семидневный инструктаж."
@@ -279,7 +266,7 @@ label goHome:
     sl "— Ничего особенного. Но ходят слухи о секретной столовой, где кормят лучше..."
     "— Что за бред? Ладно, пошли, места хоть займём."
     sl "— Погнали!"
-    show bg coridor with dissolve
+    show bg coridor newbies with dissolve
     show bg diner with dissolve
     # Спускаются
     sl "— Давай сюда сядем?"
@@ -322,8 +309,8 @@ label goHome:
         pi "— Да что ты как ребёнок-то? Ну ладно, как знаешь."
     "Постепенно столовая стала заполняться людьми, нам принесли еду, мы болтали о всякой ерунде. Будто бы и не было никакой опасности."
     hide slava with dissolve
-    scene bg coridor with dissolve
-    scene bg room with dissolve
+    scene bg coridor newbies with dissolve
+    scene bg room mine with dissolve
     "Мы вернулись в комнату."
     sl "— Так, я в душ..."
     menu:
@@ -351,7 +338,7 @@ label goHome:
             jump ch3day1
         "Прогуляться по жилому комплексу":
             $ seenChessGame == True
-            scene bg coridor with dissolve
+            scene bg coridor newbies with dissolve
             "Я не спеша вышел из комнаты, осмотрелся по сторонам. И что тут есть?"
             "Ни души в коридоре. Дошёл до конца, поднялся по лестнице на следующий этаж."
             scene bg coridor second with dissolve
@@ -405,7 +392,7 @@ label grossmeister:
     "Однако, играть я ещё не разучился."
     "Этот странный парень не был из тех, кто долго думает, но при этом каждый ход был продуманным."
     "Хотя непохоже, что у него был большой опыт."
-    scene chess with dissolve
+    scene bg chess with dissolve
     nvlc "В итоге, мы пришли к такой позиции."
     str_nvl "— И как же ты поступишь?"
     nvlc "У меня было три варианта:\n
@@ -413,7 +400,7 @@ label grossmeister:
         Второй - напасть конём, чтобы сделать то же самое через ход, только с выгодным разменом.\n
         Третий - пойти вперёд королём, чтобы забрать беззащитного слона следующим ходом."
     hide nvl
-    $ result = renpy.imagemap("images/chess.jpg", "images/chess-hovered.jpg", [(786, 150, 853, 215, "first"), (720, 283, 788, 350, "second"), (855, 150, 922, 216, "third")], focus="imagemap")
+    $ result = renpy.imagemap("images/bg/chess.jpg", "images/bg/chess-hovered.jpg", [(786, 150, 853, 215, "first"), (720, 283, 788, 350, "second"), (855, 150, 922, 216, "third")], focus="imagemap")
     if result == "first":
         "Просто, быстро, напролом!"
         stranger "— А мне казалось ты поумнее будешь."
@@ -479,9 +466,10 @@ label grossmeister:
     hide tenko
     "Мы попрощались и я пошёл в свою комнату."
     scene bg coridor second with dissolve
-    scene bg coridor with dissolve
-    scene bg room with dissolve
+    scene bg coridor newbies with dissolve
+    scene bg room mine with dissolve
     "К тому времени, Слава уже спал богатырским сном. Я плюхнулся в кровать и отключился."
+    scene black with closing
     # bulka: Как мы узнаем на следующий день - это будет наш сосед слева (заменю павла на него), но прежде чем начать переделывать разговор с павлом, хочу приделать к этому персонажу очки аля как с женскими персонажами, но! никакого яоя или прочей лабуды. Просто в определённой ветке сюжета будет важно, считает ли он нас за дауна или нет (если просто и понятно). В инферно руте это поможет свалить к инферно/ещё что, ибо считая гг дауном, "странный" (имя ещё не придумал) не перестрахуется/не проследит за нами. Как это будет сочетаться с рутой людей пока хз. Мб в разговоре интерес проявит. Возможно, вместо очков хватит переменной, но опять же - пока хз.
     # bulka: Хочется ещё попросить прощения перед тем, кто будет переделывать эту лабуду с пробелами. Я, вроде, старался, и делал 4 пробела как у вас, но прошлый раз косяк проскочил. Кхер его знает, что будет сейчас.
     # bulka: Ну не может быть, что бы и в этот раз я не накосячил. Хочется предупредить, что количество очков агрессии сейчас точно выверено, так что аккуратнее с предыдущеми главами - это всё может полететь, если эти пойнты редактировать.
@@ -490,7 +478,7 @@ label grossmeister:
 # выделил отдельно, так как этот в этот кусок текста можно попасть в разных случаях — если знать комнату, и если соврать, что искал её
 label inYumingRoom:
     $ visitedYumingRoom = True
-    scene bg yuming room with dissolve
+    scene bg room yuming with dissolve
     show yuming night at center2 with dissolve
     yu "— И нет, я не предложу тебе чай."
     "— Э... А при чём тут чай?"

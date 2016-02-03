@@ -6,20 +6,32 @@
 init python:
     # Слои камеры
     register_3d_layer('background','middle', 'forward')
+    # Автоподгрузка изображений
+    import os
+    def define_characters(characterImageFolder, excludeFirstXFolders=0, flip=True):
+        for path in renpy.list_files():
+            if path.startswith(characterImageFolder + "/"):
+                path_list = path.split("/")
+                path_list[-1] = os.path.splitext(path_list[-1])[0]
+                path_list = tuple(path_list[excludeFirstXFolders:])
+                renpy.image(path_list, path)
+                if flip:
+                    renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
+    define_characters("images", 1, False)
 
 # Определение сцен
-image bg mediterranean = "images/mediterranean.jpg" 
-image bg ocean = "images/ocean.jpg"
-image bg sky = "images/sky.jpg"
-image bg sky ocean = "images/sky-ocean.jpg"
-image bg ship crashed = "images/ship-crashed.jpg"
-image bg bus = "images/0575_BG35_BB.png"
-image bg hospital room day = "images/012_BG_005A.jpg"
-image bg hospital room sunset = "images/013_BG_005B.jpg"
-image bg hospital reg = "images/rega.jpg"
-image bg hospital = "images/buildings_107.jpg"
-image bg lift = "images/lift.png"
-image rage = "images/rage.png"
+# image bg mediterranean = "images/mediterranean.jpg" 
+# image bg ocean = "images/ocean.jpg"
+# image bg sky = "images/sky.jpg"
+# image bg sky ocean = "images/sky-ocean.jpg"
+# image bg ship crashed = "images/ship-crashed.jpg"
+# image bg bus = "images/0575_BG35_BB.png"
+# image bg hospital room day = "images/012_BG_005A.jpg"
+# image bg hospital room sunset = "images/013_BG_005B.jpg"
+# image bg hospital reg = "images/rega.jpg"
+# image bg hospital = "images/buildings_107.jpg"
+# image bg lift = "images/lift.png"
+# image rage = "images/rage.png"
 
 # Определение персонажей игры.
 define yu0 = Character('Азиатка', color="#a78ddf")
@@ -42,11 +54,6 @@ define ush = Character('Уш', color="#c8ffc8")
 define usa = Character('Военнослужащий США', color="#c9ffc8")
 
 # Спрайты персонажей
-image yuming shamed = "images/yuming-shamed.png"
-image yuming angry = "images/yuming-angry.png"
-
-image marie smiling = "images/marie-smiling.png"
-image marie shamed = "images/marie-shamed.png"
 
 # Плейсхолдеры
 image tonya happy = Placeholder("girl")
@@ -143,10 +150,12 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $  testing = False;
+    $  testing = True;
 
 
-    
+    # Imagedissolve Transitions. 
+    $ opening = ImageDissolve("images/eye.png", 0.8, 8) 
+    $ closing = ImageDissolve("images/eye.png", 0.8, 8, reverse=True) 
 
 # Игра начинается здесь.
 label start:

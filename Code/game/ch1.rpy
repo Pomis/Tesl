@@ -10,9 +10,7 @@ label ocean:
     with dissolve
     $ renpy.pause()
     
-  
-
-    scene bg sky ocean onlayer background
+    scene bg ocean day onlayer background
     $ camera_move(0, -10000, 0, 0, 0)
     $ camera_moves( ( (160, -10030, 0, 0, 2, 'ease'),(0, -10000, 0, 0, 4, 'ease') ), loop=True)
     play music "music/123.ogg"
@@ -25,7 +23,7 @@ label ocean:
     "Кругом так безмятежно, тихо и спокойно, что глаза сами закрылись. Ничего не мешает поспать ещё часок, разве что солнце припекает, да и покачивает меня почему-то..{w} опять качнуло. {w}И вдруг я вспомнил."
     with vpunch
     $ camera_move(2500, -8000, 0, 0, 1, 'ease')
-    show boat onlayer middle at bottom
+    show boat day onlayer middle at bottom
     "Так резко вскакивать всё же не стоило: я запутался в каких-то вещах и чуть не упал за борт. "
     $ camera_move(500, -2000, 0, 0, 1, 'ease')
     "Удержав равновесие, я поднял глаза и увидел океан."
@@ -35,8 +33,8 @@ label ocean:
     $ camera_move(0,0,400,0,0)
     hide boat onlayer middle
     call flashback1
-    scene bg sky ocean onlayer background
-    show boat onlayer middle at bottom
+    scene bg ocean day onlayer background
+    show boat day onlayer middle at bottom
     $ camera_move(500, -2000, 0, 0, 0)
     $ camera_moves( ( (660, -2100, 0, 0, 2, 'ease'),(500, -2000, 0, 0, 4, 'ease') ), loop=True)
     with flash

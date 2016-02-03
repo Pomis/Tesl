@@ -1,10 +1,4 @@
 init:
-    image bg hangar ships = "images/hangar-ships.png"
-    image bg poligon tir = "images/poligon-tir.png"
-    image bg laba front = "images/laba-front.png"
-    image bg laba back = "images/laba-back.png"
-    image bg laba opened = "images/laba-opened.png"
-    image bg zumwalt coords = "images/zumwalt-coords.jpg"
     image marie scaled smiling = im.FactorScale("images/marie-smiling.png", 0.26, 0.26)
     image marie scaled shamed = im.FactorScale("images/marie-shamed.png", 0.26, 0.26)
 ############## Происходит в первую очередь ###################
@@ -29,7 +23,7 @@ label ch3day2:
     # $ result = renpy.imagemap("images/karkas.jpg", "images/karkas-hover.jpg", [(506, 257, 610,388, "classes"), (699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
 
     if result == "tir":
-        scene bg poligon
+        scene bg poligon guns
         "Тир, значит. Как же это название не подходит этому помещению."
         "На этот раз тут здесь было не так людно. Всего лишь один человек кроме меня. Паренёк, лет 20, пухленький."
         show pavel tired at right
@@ -102,7 +96,7 @@ label ch3day2:
             pav "— Ладно, ладно, только ты убери автомат от моего лица!"
             "— Ну как хочешь."
             call ush1
-            scene bg poligon
+            scene bg poligon guns
             pav "— И да, почему я именно в тире. На каждом оружии установлен датчик, который запретит лифту двигаться, если ты войдёшь в него с этим оружием. А когда включится тревога, все подобные ограничения будут сняты."
             "— Откуда такая уверенность?"
             pav "— Я тут уже три недели."
@@ -117,7 +111,7 @@ label ch3day2:
             pav "— Тебе ничего забрать не нужно?"
             "— Нет, я налегке." 
             call ush2
-            scene bg poligon
+            scene bg poligon guns
             pav "— Ну ла..." with vpunch
             "Фразу Павлика прервал оглушающий шум, как будто гром раздался прямо в этом тире." with vpunch
             "Лампы мгновенно переключились на красный. Включились сирены"
@@ -127,7 +121,7 @@ label ch3day2:
             show pavel afraid at center
             pav "— В жилой комплекс!"
             "— Да знаю!"
-            show bg coridor
+            show bg coridor newbies
             "Павел поставил стул и легко снял решётку с вентиляции. Закинул автомат и забрался в шахту. Я следом за ним."
             "Снова удар." with vpunch
             # pomis: Тут можно будет ввести сцену, где их кто-то замечает, и выбор, убивать или нет. Но сейчас нет ничем не занятых персонажей, и нет нужды вводить кого-то нового. Если только соседку Юминг, она может ещё где-то пригодится.
@@ -188,7 +182,7 @@ label ch3day2:
             "Спустя минуту лифт с грохотом приехал."
             scene bg lift
             "Так куда поехать? В лабораторию? В ангар? Опаздывать на занятия я не хочу, лучше вообще не идти."
-            $ result = renpy.imagemap("images/karkas-tir.jpg", "images/karkas-tir-hover.jpg", [(699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
+            $ result = renpy.imagemap("images/bg/karkas-tir.jpg", "images/bg/karkas-tir-hover.jpg", [(699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
 
             if result == "lab":
                 jump lab

@@ -1,6 +1,4 @@
-image bg night ocean = "images/sky-ocean-night.jpg"
-image bg black = "images/black.jpg"
-image boat night = "images/boat-night.png"
+
 define s = Character('Сосед', color="#c8ffc8")
 define med = Character('Медработник', color="#f4f4f4")
 define gen = Character('Генерал Ганц', color="#f46553")
@@ -52,10 +50,10 @@ label rootInferno:
     "По немногу я приходил в себя. Всё тело охватила дрожь, что же я натворил? За что? Неужели я способен вот так просто убить человека?"
     "Всю свою жизнь я не причинял никому боли, даже не дрался ни с кем... А сейчас приступ слепой ярости ударил в голову, и что самое страшное, я даже не чувствую своей вины."
     hide boat onlayer middle
-    scene bg black onlayer background with fade
+    scene black onlayer background with closing
     "Может, это из-за жары и изнеможения? Постепенно я отключился..."
     call flashback2
-    scene bg night ocean onlayer background
+    scene bg ocean night onlayer background with opening
     show boat night onlayer middle at bottom
     $ camera_move(500, -2000, 0, 0, 0)
     $ camera_moves( ( (660, -2100, 0, 0, 2, 'ease'),(500, -2000, 0, 0, 4, 'ease') ), loop=True)
@@ -85,7 +83,7 @@ label rootInferno:
     stop sound
     "Меня и остальных выживших доставили в Испанию, власти которой и организовали спасательную операцию. {w}Около двадцати человек, в основном, россияне. "
     "Я не стал ни с кем разговаривать. Какая-то дама безостановочно рыдала, да и у других вид был не лучше."
-    hide boat onlayer middle
+    hide boat day onlayer middle
     scene bg bus onlayer background
     "Нас везли в больницу в какой-то испанский город, названия я не запомнил, да и голова была загружена другими мыслями. "
     "Я поставил себе цель пройти тест на возможность управления тем странным оборудованием. Китаянка говорила о каком-то тесте на вирус в своей провинции..."
@@ -150,7 +148,7 @@ label rootInferno:
                     # bulka: А с чего довольный-то? С того, что нагрубил?
                     # pomis: сделал гадость — сердцу радость
         "Прогуляться":
-            scene bg hospital onlayer background
+            scene bg hospital outdoors onlayer background
             "Интересно, в этой стране всегда такая хорошая погода? Любуясь видом из окна, решаю прогуляться"
             "Выходя из корпуса чуть не сбиваю с ног пожилого врача"
             "— Ой... Простите!"
