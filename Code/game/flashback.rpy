@@ -27,7 +27,7 @@ label flashback1:
     "Ночную тишину нарушил громкий звук рассекаемого воздуха."
     # Звук взрыва
     "Что-то на огромной скорости врезалось в корабль. От столкновения корабль сильно тряхнуло, а взрыв разделил корабль на две части."
-    show bg cruise crashed
+    show bg cruise crashed with dissolve
     show tonya scared:
         xalign 0.7 yalign 0.5 alpha 1.0
         easeout 2 zoom 0.1

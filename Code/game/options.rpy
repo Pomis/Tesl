@@ -186,7 +186,7 @@ init -1 python hide:
 
     ## Музыка, играющая в главном меню.
 
-    config.main_menu_music = "music/123.ogg"
+    config.main_menu_music = "music/E6M7 - Welcome to Eight Seven!.mp3"
 
 
     #########################################
