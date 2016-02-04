@@ -56,20 +56,20 @@ define usa = Character('Военнослужащий США', color="#c9ffc8")
 # Спрайты персонажей
 
 # Плейсхолдеры
-image tonya happy = Placeholder("girl")
-image tonya scared = Placeholder("girl")
+image tonya happy = "images/placeholder/girl.png"
+image tonya scared = "images/placeholder/girl.png"
 
-image slava smiling = Placeholder("boy")
-image slava serious = Placeholder("boy")
-image slava laughing = Placeholder("boy")
+image slava smiling = "images/placeholder/boy.png"
+image slava serious = "images/placeholder/boy.png"
+image slava laughing = "images/placeholder/boy.png"
 
-image gantz serious = Placeholder("boy")
+image gantz serious = "images/placeholder/tall.png"
 
-image tenko = Placeholder("boy")
-image tenko thinking = Placeholder("boy")
+image tenko = "images/placeholder/boy.png"
+image tenko thinking = "images/placeholder/boy.png"
 
-image pavel tired = Placeholder("boy")
-image pavel afraid = Placeholder("boy")
+image pavel tired = "images/placeholder/boy.png"
+image pavel afraid = "images/placeholder/boy.png"
 
 
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)

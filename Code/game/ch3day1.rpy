@@ -25,9 +25,12 @@
 
 label ch3day1:
     scene black 
-    scene bg room mine with opening
+    scene bg room back with opening
+    $ camera_reset()
+    show bg room back onlayer background 
+    show bg room front onlayer forward 
     "Проснулся я от грохота распахнувшейся настеж двери и громогласного \"РОТА ПОДЬЁМ!\". В дверях стоял крепкий паренёк" # типа булата из акаме, даёшь яой в массы лол
-    show coordinator serious with vpunch
+    show coordinator serious onlayer middle with vpunch
     play music "music/E6M7_-_Dobrogo_utra.ogg"
     co "— Просыпаемся, ребятки, одеваемся, завтракаем и идём в учебный класс!"
     # "на столе под окном уже лежали 4 комплекта формы и наборы для личной гигиены."
@@ -35,6 +38,15 @@ label ch3day1:
     co "— А, да, я координатор вашей группы, меня зовут Жорик, но вы можете называть меня Братуха или Красавчик!" # bulka: ещё бы красавела, как в старом анекдоте...
     co "У вас 7 минут, время пошло! Где столовая находится, все знают?"
     co "— Потом на лифте приедете ко мне."
+
+    show slava smiling onlayer middle:
+        xpos -0.29 ypos 1.47 xanchor 0.43 yanchor 1.0 zoom 1.16 rotate 67 
+        ease 0.5 xpos -0.03 ypos 1.47 xanchor 0.43 yanchor 1.0 zoom 1.16 rotate 67 
+    sl "— Вставай давай!"
+    hide bg onlayer background
+    hide bg onlayer forward
+    hide slava onlayer middle
+    hide coordinator onlayer middle
     scene bg coridor newbies with dissolve
     "Вскоре мы уже шагали по коридору в направлении столовой."
     hide coordinator serious with fade
@@ -312,7 +324,7 @@ label ch3day1:
             # инфа про противника из файла на гитхабе про инферно
         "Смотреть презентацию":
             $ gunPoints += 2
-            scene bg educlass center titan
+            scene bg educlass titan
             # картинки или на листовке или проектор
             # тут будет слайдшоу из 2-3 набросков существ противника и текст. На картинках можно написать название противника и слабое место.
             # В руте солдата во время боя перед тобой появится одно из этих существ и будет выбор, в какую часть тела противника стрельнуть (как VATS в FALLOUT)
@@ -320,7 +332,7 @@ label ch3day1:
             "Занятие напомнило мне школьный урок биологии, там нам показывали картинки животных и рассказывали как они живут и что едят."
             "Однако тут было небольшое отличие - про каждое существо нам подробно объясняли как его убить."
             "Арсенал живой силы противника пугал своим разнообразием, нам объяснили, что это специально созданные животные для уничтожения людей." 
-    scene bg educlass center titan
+    scene bg educlass titan
     co "Сами же Инферно в боях открыто не участвуют, чаще всего сражаться придётся с перечисленными существами."
     co  "Ну из слайдов вы знаете их слабые места, так что это не должно вызвать проблем"
     if gunPoints == 0:
