@@ -71,6 +71,11 @@ image tenko thinking = "images/placeholder/boy.png"
 image pavel tired = "images/placeholder/boy.png"
 image pavel afraid = "images/placeholder/boy.png"
 
+image ush serious = "images/placeholder/tall.png"
+
+image alil bored = "images/placeholder/tall.png"
+image alil serious = "images/placeholder/tall.png"
+
 
 #image yuming shamed = im.FactorScale("images/yuming-shamed.png",0.4,0.4)
 image yuming = "images/yuming.png"
@@ -121,8 +126,8 @@ init:
     $ withMinoriOnZumwalt = False # Зачищает помещения Zumwalt вместе с Минори
     $ ushWonded = False # Уш ранен из пистолета
     $ pickedManipulator = False # подобрал манипулятор сознанием
-	$ neutral = False # отношение юминг в доп главе.
-	$ marieJoke = False # шутка марии в доп главе
+    $ neutral = False # отношение юминг в доп главе.
+    $ marieJoke = False # шутка марии в доп главе
 
     # Жив ли персонаж
     $ yumingAlive = True # Я так понимаю, будут возможны переходы из солдатского рута в инферно, то есть, возможна ситауация, когда игрок в руте инферно, а юминг жива, так что, эта переменная пригодится.

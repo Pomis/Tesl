@@ -1,6 +1,3 @@
-init:
-    image marie scaled smiling = im.FactorScale("images/marie-smiling.png", 0.26, 0.26)
-    image marie scaled shamed = im.FactorScale("images/marie-shamed.png", 0.26, 0.26)
 ############## Происходит в первую очередь ###################
 label ch3day2:
     co "— РОТА ПОДЪЁМ!"
@@ -19,7 +16,7 @@ label ch3day2:
     "Я сам не заметил, как зашёл в лифт."
     "Приложил палец к сканеру отпечатков."
     # Пока без тира.
-    $ result = renpy.imagemap("images/karkas.jpg", "images/karkas-hover.jpg", [(437, 452,520,540, "tir"), (506, 257, 610,388, "classes"), (699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
+    $ result = renpy.imagemap("images/bg/karkas.jpg", "images/bg/karkas-hover.jpg", [(437, 452,520,540, "tir"), (506, 257, 610,388, "classes"), (699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
     # $ result = renpy.imagemap("images/karkas.jpg", "images/karkas-hover.jpg", [(506, 257, 610,388, "classes"), (699, 326, 870, 605, "hungar"), (514, 604, 666, 693, "lab")], focus="imagemap")
 
     if result == "tir":
@@ -275,11 +272,13 @@ label lab:
         "Спустя пару минут я снова оказался в этом странном футуристическом помещении. Повсюду были какие-то опытные образцы, ну и бардак."
     "Спустя пару минут я оказался в этом странном футуристическом помещении. Повсюду были какие-то опытные образцы, ну и бардак."
     
-    show marie scaled smiling onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
+    show marie smiling onlayer middle with dissolve:
+        xpos 0.44 ypos 0.47 xanchor 0.5 yanchor 1.0 zoom 0.31 
     "Мария что-то доказывала своим коллегам, рисуя на доске маркером схемы."
-    show marie scaled shamed onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
+    show marie shamed onlayer middle with dissolve:
+        xpos 0.44 ypos 0.47 xanchor 0.5 yanchor 1.0 zoom 0.31 
     "Увидев меня через стекло переговорной комнаты, она немного смутилась. Не думала, что я действительно приду, наверное."
-    show marie scaled smiling onlayer middle at Position(xpos=0.44, xanchor='center', ypos=0.49) with dissolve
+    show marie smiling onlayer middle with dissolve
     if promisedMarie == True: # Если обещал Марии прийти в лабу
         "На этот раз мне придётся ждать. Поброжу по лаборатории, что ли..."
     else:
@@ -304,7 +303,10 @@ label lab:
             if inferno==False:
                 "Да и зачем??"
             "На лабораторном столе валялся разобранный пистолет Adam's Rage, какие-то странные камни, чертежи, несколько флешек и куча другой ерунды."
-    show marie scaled smiling onlayer middle at Move((0.44, 0.36), (0.1, 0.36), 1.0, xanchor="center", yanchor="center")
+    
+    show marie smiling onlayer middle:
+        xpos 0.44 ypos 0.47 xanchor 0.5 yanchor 1.0 zoom 0.31 
+        ease 0.6 xpos 0.3
     "Через несколько минут дверь переговорной открылась, и из неё вышло несколько людей в военной форме и двое учёных в возрасте."
     hide bg onlayer background
     hide bg onlayer forward
@@ -616,9 +618,18 @@ label ush1:
         xalign 0.5 yalign 0.9
     with dissolve
     $ renpy.pause()
-    scene bg sky ocean with flash
+    $ camera_reset()
+    show bg zumwalt cabin onlayer background with flash
+    show bg zumwalt front onlayer forward
+    show ush serious onlayer middle with dissolve:
+        xpos 0.92 ypos 0.7 xanchor 0.5 yanchor 1.0 zoom 0.53 
+    
     ush "— Алулим! Ты где?!"
     "Из-за двери послышался голос"
+
+    show alil bored  onlayer forward:
+        xpos -0.21 ypos 1.52 xanchor 0.5 yanchor 1.0 zoom 1.9 
+        ease 0.9 xpos 0.59 ypos 1.03 xanchor 0.5 yanchor 1.0 zoom 1.0
     alil "— Старший Уш, вы меня потеряли?"
     ush "— Ну как видишь. Сколько ещё плыть?"
     alil "— Десять минут, Старший."
@@ -628,10 +639,15 @@ label ush1:
     alil "— Нет, простите, {w}капитан."
     ush "— Вот и хорошо. До сих пор не могу поверить, что нам удалось провернуть такое всемером! Я сильно переоценивал врага."
     # bulka: На этом фоне кажется весьма странным за то, что они гнобили уша за невыполненное задание, которое было по хардкору и семи человек по плану было недостаточно.
+    # pomis: Да я там переделаю
+    hide bg onlayer background
+    hide bg onlayer forward
+    hide ush onlayer middle
+    hide alil onlayer forward
     return
 
 label ush2:
-    scene bg sky ocean with flash 
+    scene bg zumwalt cabin with flash 
     alil "— Капитан, всё готово. По вашему приказу!"
     ush "— Огонь!"
     return
