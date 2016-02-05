@@ -35,14 +35,45 @@ label ch5enlil:
     scene black with dissolve
     # сцена какой-нибудь коридор
     # переход, сцена — центр исследований человеческих технологий, везде куча образцов техники
+    $ camera_reset()
+    show bg inferno lab onlayer background
+    show bg inferno front onlayer forward
     alil "— Есть тут кто вообще?"
+    show enlil onlayer middle:
+        xpos 0.11 ypos 1.0 xanchor 0.5 yanchor 0.72 zoom 0.6 
+        easein 1.0 xpos 0.11 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.6 
+        pause 0.2
+        easein 0.5 xpos 0.11 ypos 0.87 xanchor 0.5 yanchor 1.0 zoom 0.6 
     "Из под стола вылезло существо, всем своим видом выражающее, что его оторвали от чего-то очень интересного"
     en "— Чего так поздно пришёл? Мы уже не работаем."
     # Анимация перемещения наблюдателя
     alil0 "— Тут срочное поручение от сената."
+    show black onlayer forward:
+        alpha 0.0
+        ease 1.0 alpha 1.0
+    $ camera_move(-6000, -953, 1579, -4, duration=1.0) 
+    $ renpy.pause(1)
+    $ camera_reset()
+    hide enlil onlayer middle
+    hide bg onlayer background
+    hide bg onlayer forward
+    hide black onlayer forward
+    show bg inferno lab2 onlayer background
+    show bg inferno front2 onlayer forward
+    show alil bored onlayer middle:
+        xpos 0.23 ypos 0.89 xanchor 0.5 yanchor 1.0 zoom 0.83 
+    show black onlayer forward:
+        alpha 1.0
+        ease 1.0 alpha 0.0
+
+    $ all_moves(camera_check_points={'x': [(904, 0, 'easein'), (0, 0.45, 'easein')], 'z': [(205, 0, 'easein'), (0, 0.45, 'easein')]})
     menu:
         "— У меня дела поважнее":
             alil0 "— Ну и чем ты занимаешься?"
+
+            show alil bored onlayer middle:
+                xpos 0.23 ypos 0.89 xanchor 0.5 yanchor 1.0 zoom 0.83 
+                ease 1.0 xpos 0.31 ypos 1.03 xanchor 0.5 yanchor 1.0 zoom 0.97 
             "Алилум подошёл поближе и стал рассматривать вещи на моём столе."
             "— Я пытаюсь починить ящик-разогревашку! Кто-то решил, что это телепорт, и пытался отправить бананы в Ниппур."
             alil0 "— И что, это важнее поручения сената? Серьёзно? Ящик-разогревашка?"
@@ -85,5 +116,10 @@ label mission:
     hide nvl
     alil0 "— Ну ладно, я пойду."
     "— Спасибо. Наконец-то увижу как там..."
+
+    show alil bored onlayer middle:
+        xpos 0.31 ypos 1.03 xanchor 0.5 yanchor 1.0 zoom 0.97  alpha 1
+        ease 0.71 alpha 0.0  xpos 0.67
     "Ушёл даже не дослушав!"
+
     "{w=10}Дальше пока ничего нет"
