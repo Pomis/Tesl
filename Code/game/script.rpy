@@ -48,6 +48,7 @@ define pav0 = Character('Пухлый парень', color='#baae93')
 define pav = Character('Павел', color="#baae93")
 define ten = Character('Тенко', color='#8c8c8c')
 define en = Character('Энлиль', color='#0eb305')
+define es = Character('Эсхалия')
 
 define nvlc = Character('', kind=nvl)
 define alil0 = Character('Надоедливый самозванец', color="#c8ffc8")
