@@ -97,7 +97,7 @@ label rootSoldier:
     hide boat onlayer middle
     hide yuming onlayer forward
     call flashback2
-    scene bg night ocean onlayer background
+    scene bg ocean night onlayer background
     show boat night onlayer middle at bottom
     $ camera_move(500, -2000, 0, 0, 0)
     $ camera_moves( ( (660, -2100, 0, 0, 2, 'ease'),(500, -2000, 0, 0, 4, 'ease') ), loop=True)
