@@ -56,6 +56,7 @@ define alil = Character('Алулим', color="#c8ffc8")
 define ush = Character('Уш', color="#c8ffc8")
 define usa = Character('Военнослужащий США', color="#c9ffc8")
 define noname = Character('Сенатор какой-то там')
+define port = Character('Портальщик')
 
 # Спрайты персонажей
 
