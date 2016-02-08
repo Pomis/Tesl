@@ -134,6 +134,7 @@ init:
     $ pickedManipulator = False # подобрал манипулятор сознанием
     $ neutral = False # отношение юминг в доп главе.
     $ marieJoke = False # шутка марии в доп главе
+    $ PavelHelp = False # способ узнать инфу от павла
 
 
     # Жив ли персонаж
