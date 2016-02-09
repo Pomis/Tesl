@@ -735,6 +735,9 @@ label ush1:
     hide bg onlayer forward
     hide ush onlayer middle
     hide alil onlayer forward
+    hide bg
+    hide point
+    hide text
     return
 
 label ush2:
