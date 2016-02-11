@@ -338,6 +338,9 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
+    build.classify("game/**.png", "archive")
+    build.classify("game/**.jpg", "archive")
+
     ## To archive files, classify them as 'archive'.
 
     # build.classify('game/**.png', 'archive')
