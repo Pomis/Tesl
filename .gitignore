@@ -29,3 +29,5 @@ Code/traceback.txt
 *.bak
 
 Code/errors.txt
+
+*.rpa
