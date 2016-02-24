@@ -196,18 +196,16 @@ label start:
                 jump rootInferno
             "ch2 - soldier":
                 jump rootSoldier
-            "ch3 - warBase":
+            "ch3 - day0":
                 jump warBase
-            "ch3 - chess":
-                jump grossmeister
-            "ch3 - yuming room":
-                jump inYumingRoom
             "ch3 - day1":
                 jump ch3day1
             "ch3 - day2":
                 jump ch3day2
-            "ch4":
+            "ch4 - day0":
                 jump ch4
+            "ch4 - day1":
+                jump ch4day1
             "ch5enlil":
                 jump ch5enlil
     else:
