@@ -19,19 +19,7 @@ init python:
                     renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
     define_characters("images", 1, False)
 
-# Определение сцен
-# image bg mediterranean = "images/mediterranean.jpg" 
-# image bg ocean = "images/ocean.jpg"
-# image bg sky = "images/sky.jpg"
-# image bg sky ocean = "images/sky-ocean.jpg"
-# image bg ship crashed = "images/ship-crashed.jpg"
-# image bg bus = "images/0575_BG35_BB.png"
-# image bg hospital room day = "images/012_BG_005A.jpg"
-# image bg hospital room sunset = "images/013_BG_005B.jpg"
-# image bg hospital reg = "images/rega.jpg"
-# image bg hospital = "images/buildings_107.jpg"
-# image bg lift = "images/lift.png"
-# image rage = "images/rage.png"
+
 
 # Определение персонажей игры.
 define yu0 = Character('Азиатка', color="#a78ddf")
@@ -40,7 +28,7 @@ define g = Character('Незнакомка', color="#a78ddf")
 define sis = Character('Тоня', color='#d27a1c')
 define co0 = Character('Парень со странной причёской', color="#c8ffc8") # Координатор до знакомства
 define co = Character('Координатор', color="#c8ffc8")
-define nn2 = Character('NoName2', color="#c8ffc8")
+define nn2 = Character('sa2', color="#c8ffc8")
 define mi = Character('Минори', color="#fbc072")
 define man = Character('Чувак', color="#c8ffc8")
 define sl = Character('Слава', color="#c8ffc8")
@@ -49,13 +37,22 @@ define pav = Character('Павел', color="#baae93")
 define ten = Character('Тенко', color='#8c8c8c')
 define en = Character('Энлиль', color='#0eb305')
 define es = Character('Эсхалия')
-
+define ra = Character('Голос из рации', color="#e4e4e4")
+define pi0 = Character('Пилот вертолёта', color="#e1e4e1")
+define pi = Character('Иван', color="#e1e4e1")
+define ma = Character('Мария', color="#faf0b8")
+define sl = Character('Слава', color="#faf0b8")
+define stranger = Character('Странный', color="#8c8c8c")
+define str_nvl = Character('Странный', color="#8c8c8c", kind=nvl)
+# bulka: Цвет можно заменить, просто скопировал, имя временное, пока не придумал
+define golos = Character('Голос', color="#f8349f")
+define regf = Character('Офицер', color="#f8349f")
 define nvlc = Character('', kind=nvl)
 define alil0 = Character('Надоедливый самозванец', color="#c8ffc8")
 define alil = Character('Алулим', color="#c8ffc8")
 define ush = Character('Уш', color="#c8ffc8")
 define usa = Character('Военнослужащий США', color="#c9ffc8")
-define noname = Character('Сенатор какой-то там')
+define sa = Character('Саргон')
 define port = Character('Портальщик')
 
 # Спрайты персонажей
@@ -143,6 +140,7 @@ init:
     $ PavelHelp = False # способ узнать инфу от павла
     $ tenkoInterested = False # Тенко заинтересовался в случае с кораблём. Возможно, эта переменная будет задействована при переходе из инферно в рут людей. Изначально создал её, чтобы выбор влиял хоть сколько-то.
     $ PavelHelped = False # Вылазил ли Павел из вентиляции
+    $ knowIvanName = False # Знает имя пилота вертолёта.
 
     # Жив ли персонаж
     $ yumingAlive = True # Я так понимаю, будут возможны переходы из солдатского рута в инферно, то есть, возможна ситауация, когда игрок в руте инферно, а юминг жива, так что, эта переменная пригодится.
@@ -173,7 +171,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $  testing = True;
+    $ testing = True;
 
 
     # Imagedissolve Transitions. 
