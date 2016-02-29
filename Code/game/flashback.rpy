@@ -14,8 +14,8 @@ label flashback1:
     # Фон: палуба корабля
     hide bg onlayer background
     scene bg cruise ok
-    show tonya happy:
-        xalign 0.7 yalign 0.5
+    show tonya happy onlayer master:
+        xpos 0.73 ypos 0.87 xanchor 0.7 yanchor 0.5 
     sis "— Я никогда не видела столько звёзд на небе!"
     "— Ну конечно, ты всю жизнь не выезжала из Москвы. А сейчас мы где-то между Европой и Африкой..."
     sis "— Да ты тоже!"
@@ -26,8 +26,8 @@ label flashback1:
     "Что-то на огромной скорости врезалось в корабль. От столкновения корабль сильно тряхнуло, а взрыв разделил корабль на две части."
     show bg cruise crashed with dissolve
     show tonya scared:
-        xalign 0.7 yalign 0.5 alpha 1.0
-        easeout 2 zoom 0.1
+        xpos 0.73 ypos 0.87 xanchor 0.7 yanchor 0.5 alpha 1.0
+        easeout 2 zoom 0.1 ypos 0.3 
         easeout 1 alpha 0.0 zoom 0.05
 
     sis "— Бра-а-а-ат! "

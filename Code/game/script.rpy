@@ -58,8 +58,6 @@ define port = Character('Портальщик')
 # Спрайты персонажей
 
 # Плейсхолдеры
-image tonya happy = "images/placeholder/girl.png"
-image tonya scared = "images/placeholder/girl.png"
 
 image slava smiling = "images/placeholder/boy.png"
 image slava serious = "images/placeholder/boy.png"
