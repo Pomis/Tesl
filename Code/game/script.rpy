@@ -54,6 +54,8 @@ define ush = Character('Уш', color="#c8ffc8")
 define usa = Character('Военнослужащий США', color="#c9ffc8")
 define sa = Character('Саргон')
 define port = Character('Портальщик')
+define isc0 = Character('Длинноволосая')
+define isc = Character('Искра')
 
 # Спрайты персонажей
 
@@ -139,6 +141,8 @@ init:
     $ tenkoInterested = False # Тенко заинтересовался в случае с кораблём. Возможно, эта переменная будет задействована при переходе из инферно в рут людей. Изначально создал её, чтобы выбор влиял хоть сколько-то.
     $ PavelHelped = False # Вылазил ли Павел из вентиляции
     $ knowIvanName = False # Знает имя пилота вертолёта.
+    $ knowIsqraName = False # Знает имя Искры
+    $ wantToDrink = False # Согласился отметить победу со Славой.
 
     # Жив ли персонаж
     $ yumingAlive = True # Я так понимаю, будут возможны переходы из солдатского рута в инферно, то есть, возможна ситауация, когда игрок в руте инферно, а юминг жива, так что, эта переменная пригодится.
@@ -152,6 +156,7 @@ init:
     $ yumingPoints = 0
     $ mariePoints = 0
     $ minoriPoints = 0
+    $ iscraPoints = 0
 
     # Отношения с другими персонажами
     $ slavaPoints = 0
