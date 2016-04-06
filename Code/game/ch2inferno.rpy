@@ -36,7 +36,7 @@ label rootInferno:
     $ inferno = True
     $ yumingAlive = False
     hide yuming onlayer forward with fade
-    "Это ОНА уничтожила корабль. {w} Мы были приманкой."
+    "Это ОНА уничтожила корабль.{w}Мы были приманкой."
     "Мы.{w} Я, Тоня и мама с папой."
     "А теперь только я." with bloodrage
     "Один.{w} И снова один."
