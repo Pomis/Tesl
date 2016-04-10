@@ -86,7 +86,7 @@ image yuming night = im.MatrixColor("images/yuming.png",im.matrix.tint(0.4, 0.4,
 # Разное
 image point = "images/point.png"
 image boat = im.FactorScale("images/boat.png",0.8,0.8)
-image text start = Text("{cps=18}{size=28}{color=#92f8ff}2049 год. Где-то в Средиземном море.{/color}{/size}{/cps}", slow=3)
+image text start = Text("{cps=18}{size=28}{color=#92f8ff}2049 год. Июнь. Где-то в Средиземном море. {/color}{/size}{/cps}", slow=3)
 image text zumwalt = Text("{cps=18}{size=28}{color=#92f8ff}В это же время. Где-то в Тихом океане.{/color}{/size}{/cps}", slow=3)
 
 
