@@ -316,7 +316,7 @@ label ch3day2:
                     "— УБЬЮЮЮЮЮЮЮЮЮ!!!"
                     "Я задыхался от гнева."
                     # bulka: Чё-то не идёт. 
-                    if $ tenkoAttention>1:
+                    if tenkoAttention>1:
                         ten "— "
                         
                 "Я быстро догнал Павла."
@@ -791,7 +791,7 @@ label hangardefault:
         mi "— Да-а-а! Оказывается, он такой классный и сильный!"
         "— Кто?"
         mi "— Жорик!"
-    elif:
+    else:
         isc "— Ну и хрень!"
     call ush2
     scene bg hangar ships with flash
