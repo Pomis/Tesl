@@ -56,7 +56,8 @@ define sa = Character('Саргон')
 define port = Character('Портальщик')
 define isc0 = Character('Длинноволосая')
 define isc = Character('Искра')
-
+define teacher = Character('Учитель')
+define classmate = Character('Одноклассник')
 # Спрайты персонажей
 
 # Плейсхолдеры
@@ -92,8 +93,9 @@ image text zumwalt = Text("{cps=18}{size=28}{color=#92f8ff}В это же вре
 
 init:
     # Характеристика игрока
-    $ playerName = "Грег"
-    $ playerFullName = "Грег Гильдин"
+    $ playerName = ""
+    $ playerFamilyName = "Гильдин"
+    $ playerFullName = ""
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
@@ -111,7 +113,7 @@ init:
     $ gunPoints = 0 # Умение обращаться с оружием
     $ spyPoints = 0 # Умение подслушивать, воровать, следить
     $ liePoints = 0 # Умение врать, льстить
-    $ leadershipPoint = 0 # Навык лидерства, убедительность отдаваемых приказов, уверенность высказываний
+    $ leadershipPoints = 0 # Навык лидерства, убедительность отдаваемых приказов, уверенность высказываний
 
     # Логические переменные
     $ chesspoints = False # bulka: Я просто заебался работать с этими условиями для одного выражения. Рабочая переменная. Символизирует признание уровня игры.    
