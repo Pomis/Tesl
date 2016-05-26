@@ -60,7 +60,7 @@ define teacher = Character('Учитель')
 define classmate = Character('Одноклассник')
 
 # Музыка
-define audio.kiitos = "music/Janneh - Kiitos.ogg"
+define kiitos = "music/Janneh - Kiitos.ogg"
 define chaiki = "music/123.ogg"
 define gagarin = "music/E6M7 - Gagarin.ogg"
 define cooper = "music/Alasdair_Cooper - 2044.ogg"
@@ -156,6 +156,7 @@ init:
     $ enlilHasFood = False # У Энлиль есть еда (купила пирожки или стырила батоничики)
     $ celebratedVictory = False # Таки отметил первую победу с товарищами
     $ stoodForIscra = False # Заступился за Искру по время спора 
+    $ sleptInIscraRoom = False # Заночевал у Искры после того, как отмечали первую победу.
 
     # Жив ли персонаж
     $ yumingAlive = True # Я так понимаю, будут возможны переходы из солдатского рута в Инферно, то есть, возможна ситауация, когда игрок в руте Инферно, а юминг жива, так что, эта переменная пригодится.
