@@ -58,13 +58,19 @@ define isc0 = Character('Длинноволосая')
 define isc = Character('Искра')
 define teacher = Character('Учитель')
 define classmate = Character('Одноклассник')
-# Спрайты персонажей
+
+# Музыка
+define audio.kiitos = "music/Janneh - Kiitos.ogg"
+define chaiki = "music/123.ogg"
+define gagarin = "music/E6M7 - Gagarin.ogg"
+define cooper = "music/Alasdair_Cooper - 2044.ogg"
+define humanity = "music/E6M7 -  Exinanition of humanity.ogg"
+define dobrogo = "music/E6M7 - Dobrogo_utra.ogg"
+define pixel = "music/E6M7 - Pixel_Storm.ogg"
+define welcome = "music/E6M7 - Welcome to Eight Seven.ogg"
+define helicopter = "music/helicopter.ogg"
 
 # Плейсхолдеры
-
-image slava smiling = "images/placeholder/boy.png"
-image slava serious = "images/placeholder/boy.png"
-image slava laughing = "images/placeholder/boy.png"
 
 image gantz serious = "images/placeholder/tall.png"
 
@@ -89,6 +95,8 @@ image point = "images/point.png"
 image boat = im.FactorScale("images/boat.png",0.8,0.8)
 image text start = Text("{cps=18}{size=28}{color=#92f8ff}2049 год. Июнь. Где-то в Средиземном море. {/color}{/size}{/cps}", slow=3)
 image text zumwalt = Text("{cps=18}{size=28}{color=#92f8ff}В это же время. Где-то в Тихом океане.{/color}{/size}{/cps}", slow=3)
+
+
 
 
 init:

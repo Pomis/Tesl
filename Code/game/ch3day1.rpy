@@ -32,7 +32,7 @@ label ch3day1:
     show bg room front onlayer forward 
     "Проснулся я от грохота распахнувшейся настеж двери и громогласного \"РОТА ПОДЬЁМ!\". В дверях стоял крепкий паренёк" # типа булата из акаме, даёшь яой в массы лол
     show coordinator serious onlayer middle with vpunch
-    play music "music/E6M7_-_Dobrogo_utra.ogg"
+    play music dobrogo
     co "— Просыпаемся, ребятки, одеваемся, завтракаем и идём в учебный класс!"
     # "на столе под окном уже лежали 4 комплекта формы и наборы для личной гигиены."
     # pomis: Эх, эти описания не состыковываются со всем остальным. Приходится убирать.
@@ -41,8 +41,9 @@ label ch3day1:
     co "— Потом на лифте приедете ко мне."
 
     show slava smiling onlayer middle:
-        xpos -0.29 ypos 1.47 xanchor 0.43 yanchor 1.0 zoom 1.16 rotate 67 
-        ease 0.5 xpos -0.03 ypos 1.47 xanchor 0.43 yanchor 1.0 zoom 1.16 rotate 67 
+        xpos -0.4 ypos 1.77 xanchor 0.43 yanchor 1.0 zoom 1.57 rotate 52
+        ease 0.5 xpos -0.17 ypos 1.77 xanchor 0.43 yanchor 1.0 zoom 1.57 rotate 52  
+        
     sl "— Вставай давай!"
     hide bg onlayer background
     hide bg onlayer forward
@@ -156,7 +157,7 @@ label ch3day1:
             $ knowTenkoName = True # Все разветвления ведут к тому, что гг узнаёт его имя 
             scene bg educlass left
             show tenko at left
-            play music "music/E6M7 - Gagarin.mp3"
+            play music gagarin
             if playedChess:
                 "Я посмотрел налево и увидел того странного парня, с которым вчера играл в шахматы."
                 "В правой руке он вращал чёрного короля из того комплекта фигур, которым мы играли."
@@ -451,7 +452,7 @@ label ch3day1:
     scene bg diner with dissolve
     "Нам дали полчаса чтобы поесть, а потом все вместе мы отправились практиковаться в полученных знаниях - мы пошли в... Тир"
     scene bg poligon guns
-    play music "music/E6M7 - Welcome to Eight Seven!.mp3"
+    play music welcome
     show slava laughing at right with dissolve
     sl "— Тир? Я бы назвал это место полигоном"
     pav0 "— Скоро сюда завезут новые пушки. Тогда точно станет полигоном."
