@@ -539,6 +539,7 @@ label reunion:
     # bulka: Эти пойнты означают качество противостояния Тенко и ответа на его действия. Они не означают положительное/негативное отношение к нему.
     hide nvl
     # pomis: OK
+    scene bg city room night
     if killedPeopleCount>1:
         "Мне снились те люди, которые умерли от моей руки."
         if yumingAlive == False:
