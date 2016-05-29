@@ -38,7 +38,8 @@ label flashback1:
     return
 
 label flashback2:
-    scene bg crash onlayer background with flash
+    show bg cruise crashed onlayer background with flash
+    play music humanity
     sis "— Бра-а-а-ат! Помоги-и-и!"
     "Тоня всё сильнее удалялась от меня и вскоре скрылась в морской пучине. Я держался за выступающий  на палубе штырь."
     "Моя часть корабля уже наклонилась на столько, что я висел на этом штыре, почти как на турнике."

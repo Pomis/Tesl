@@ -61,13 +61,15 @@ define classmate = Character('Одноклассник')
 
 # Музыка
 define kiitos = "music/Janneh - Kiitos.ogg"
-define chaiki = "music/123.ogg"
+define chaiki = "music/123cut.ogg"
 define gagarin = "music/E6M7 - Gagarin.ogg"
 define cooper = "music/Alasdair_Cooper - 2044.ogg"
 define humanity = "music/E6M7 -  Exinanition of humanity.ogg"
 define dobrogo = "music/E6M7 - Dobrogo_utra.ogg"
 define pixel = "music/E6M7 - Pixel_Storm.ogg"
 define welcome = "music/E6M7 - Welcome to Eight Seven.ogg"
+define vision = "music/E6M7 - Vision.ogg"
+define telescope = "music/E6M7 - telescope.ogg"
 define helicopter = "music/helicopter.ogg"
 
 # Плейсхолдеры
