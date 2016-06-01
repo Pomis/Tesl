@@ -2,6 +2,7 @@
 
 label warBase:
     hide yuming onlayer forward
+    hide gantz onlayer master
     hide boat onlayer middle
     scene bg mountains back onlayer background
     show bg mountains forward onlayer forward at center
@@ -262,6 +263,7 @@ label goHome:
     hide marie with dissolve
     scene bg room mine
     "Я вошёл в свою комнату. Довольно тесноватая, как в общежитии. Искусственное окно. Соседа не было, хотя стояло две кровати."
+    scene bg room back with dissolve
     if inferno == True:
         "Как-то совсем не хочется проходить этот семидневный инструктаж."
         "Хотя... Возможно, это будет интересно. Я же никуда не спешу со своими планами?"
@@ -270,10 +272,12 @@ label goHome:
         "Интересно, а что будет на этом инструктаже? {w}Чему нас научат?"
         "И ещё целый час ждать до ужина..."
     "Сам не заметил, как отключился."
+    scene black with closing
+    scene bg room back with opening
     "Спустя какое-то время открылась дверь и в комнату зашёл парниша, чем разбудил меня. На вид ровесник."
-    show slava serious at left:
-        xalign -0.3 yalign 0.0
-        ease 1.0 xalign 0.1   
+    show slava serious onlayer master:
+        alpha 0.0 xpos 0.97 ypos -0.19 xanchor 1.2 zoom 1.29  
+        ease 0.5 alpha 1.0
     sl "— О, новый сосед! Какими судьбами? Меня кстати Славой зовут!"
     "— Что? {w}А..."
     "Ужасно себя чувствую."
@@ -287,19 +291,20 @@ label goHome:
     sl "— Ничего особенного. Но ходят слухи о секретной столовой, где кормят лучше..."
     "— Что за бред? Ладно, пошли, места хоть займём."
     sl "— Погнали!"
+    hide slava
     show bg coridor newbies with dissolve
     show bg diner with dissolve
     # Спускаются
+    show slava smiling:
+        xalign -0.2 yalign 0.0
+        ease 0.7 xalign 0.2
     sl "— Давай сюда сядем?"
     "— Неплохо, да."
     if yumingAlive:
         
         
         sl "— Ого, Юминг вернулась! А я слышал, что она пропала на недавней боевой операции."
-        hide slava
-        show slava smiling:
-            xalign 0.1 yalign 0.0
-            ease 0.7 xalign 0.2
+        
         show yuming:
             xalign -0.5 yalign 0.0
             ease 1.0 xalign -0.1  
@@ -356,8 +361,12 @@ label goHome:
         "Дождаться Славу":
             "Пока осмотрюсь в комнате. Интересное искусственное окно. И почему в нём запущен браузер?"
             "Судя по всему, это 4 монитора, подключенных к компьютеру. Интересное решение."
+            scene bg room back with dissolve
             "Я плюхнулся в кровать. Уже никаких сил нет."
             "Только я начал засыпать, как в комнату вернулся Слава."
+            show slava serious onlayer master:
+                alpha 0.0 xpos 0.97 ypos -0.19 xanchor 1.2 zoom 1.29  
+                ease 0.5 alpha 1.0
             sl "— Эй, ты что, спать собрался?"
             "— Да, я так и не смог нормально поспать... "
             sl "— Чего вялый такой?"

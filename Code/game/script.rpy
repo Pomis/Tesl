@@ -58,6 +58,8 @@ define isc0 = Character('Длинноволосая', color="#dede88")
 define isc = Character('Искра', color="#dede88")
 define teacher = Character('Учитель')
 define classmate = Character('Одноклассник')
+define gen = Character('Генерал Ганц', color="#f5efe9")
+
 
 # Музыка
 define kiitos = "music/Janneh - Kiitos.ogg"
@@ -73,8 +75,6 @@ define telescope = "music/E6M7 - telescope.ogg"
 define helicopter = "music/helicopter.ogg"
 
 # Плейсхолдеры
-
-image gantz serious = "images/placeholder/tall.png"
 
 image tenko = "images/placeholder/boy.png"
 image tenko thinking = "images/placeholder/boy.png"

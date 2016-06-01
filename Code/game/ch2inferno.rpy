@@ -1,7 +1,6 @@
 
 define s = Character('Сосед', color="#c8ffc8")
 define med = Character('Медработник', color="#f4f4f4")
-define gen = Character('Генерал Ганц', color="#f46553")
 init:
     $ roommatePoints = 0
     $ seenLab = False
@@ -407,6 +406,8 @@ label analysis:
     # Теперь Ка-70 — никому не известный вертолёт с нейронтами, Ка-60 — распиаренный российский вертолёт
 
     "В кабине пилота даже нет привычных элементов управления."
+    show gantz serious onlayer master:
+        xpos 0.83 ypos 1.34 xanchor 1.0 yanchor 1.0 zoom 1.42 
     gen "— Итак.{w} В твоей крови были обнаружено редкое сочетание веществ, присущее только людям с открытой нервной системой."
     "— О чём это вы?"
     gen "— Дотронься до этого прибора."
