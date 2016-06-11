@@ -26,8 +26,8 @@ define yu0 = Character('Азиатка', color="#a78ddf")
 define yu = Character('Юминг', color="#a78ddf")
 define g = Character('Незнакомка', color="#a78ddf")
 define sis = Character('Тоня', color='#d27a1c')
-define co0 = Character('Парень со странной причёской', color="#c8ffc8") # Координатор до знакомства
-define co = Character('Координатор', color="#c8ffc8")
+define co0 = Character('Парень со странной причёской', color="#ac9894") # Координатор до знакомства
+define co = Character('Координатор', color="#ac9894")
 define nn2 = Character('sa2', color="#c8ffc8")
 define mi = Character('Минори', color="#fbc072")
 define man = Character('Чувак', color="#c8ffc8")
