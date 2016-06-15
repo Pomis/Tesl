@@ -389,17 +389,21 @@ label goHome:
             scene bg coridor newbies with dissolve
             "Я не спеша вышел из комнаты, осмотрелся по сторонам. И что тут есть?"
             "Ни души в коридоре. Дошёл до конца, поднялся по лестнице на следующий этаж."
-            scene bg coridor second with dissolve
+            hide bg onlayer master
+            show bg coridor second onlayer background:
+                subpixel True xpos 0.0 ypos 1.0 xanchor 0.5 yanchor 1.0
             "Может тут хоть кто-то есть... "
-            "На диванчике расположился странный парень с забавной причёской. Он разложил на шахматной доске фигуры в случайном порядке и перемещал их."
-            show tenko thinking at right
+            show tenko thinking onlayer forward with dissolve:
+                subpixel True xpos 0.21 ypos 0.8 xanchor 0.5 yanchor 1.0 yzoom 1.0 zoom 0.57
+            "Рядом со столиком стоял какой-то странный парень. Он разложил на шахматной доске фигуры в случайном порядке и перемещал их."
             "Или не в случайном порядке? Кто знает, что у него в голове, может это ещё один гений?"
             if knowYumingRoom == True:
                 "Комната Е01, Е02..."
                 "А, точно. Надо заглянуть к Юминг.{w} Или потом? Всегда успею."
                 menu:
                     "Зайти к Юминг":
-                        hide tenko
+                        hide bg onlayer background
+                        hide tenko onlayer forward
                         # TODO: Тут сделаю картинку с дверью в Е09
                         "Та-а-ак, комната Е09. Нерешительно стучу в дверь. {w}Тук.{w} Тук-тук."
                         "Открывай давай!"
@@ -429,6 +433,8 @@ label goHome:
 
 label grossmeister:
     
+    $all_moves(camera_check_points={'y': [(0, 0, None), (0, 0.68, 'linear')], 'x': [(-8000, 0, None), (-7100, 0.68, 'linear')], 'z': [ (590, 0.68, 'linear')]})
+   
     "Я подошёл к этому парню и стал внимательно наблюдать за его действиям, пытаясь найти какую-то закономерность."
     "— В чём смысл?"
     $ playedChess = True
@@ -442,6 +448,8 @@ label grossmeister:
     "Однако, играть я ещё не разучился."
     "Этот странный парень не был из тех, кто долго думает, но при этом каждый ход был продуманным."
     "Хотя непохоже, что у него был большой опыт."
+    hide bg onlayer background
+    hide tenko onlayer forward
     scene bg chess with dissolve
     nvl clear
     nvlc "В итоге, мы пришли к такой позиции."

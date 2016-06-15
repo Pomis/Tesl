@@ -76,9 +76,6 @@ define helicopter = "music/helicopter.ogg"
 
 # Плейсхолдеры
 
-image tenko = "images/placeholder/boy.png"
-image tenko thinking = "images/placeholder/boy.png"
-
 image pavel tired = "images/placeholder/boy.png"
 image pavel afraid = "images/placeholder/boy.png"
 
