@@ -1,6 +1,9 @@
 
 
 label warBase:
+    $ layer_move("background", 2222)
+    $ layer_move("middle", 1700)
+    $ layer_move("forward", 1500)
     hide yuming onlayer forward
     hide gantz onlayer master
     hide boat onlayer middle
