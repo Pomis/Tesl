@@ -272,7 +272,7 @@ init -1 python hide:
 
     ## Запустить в полноэкранном режиме?
 
-    config.default_fullscreen = False
+    config.default_fullscreen = True
 
     ## Скорость текста по умолчанию, в знаках в секунду. 0 - бесконечность.
 
