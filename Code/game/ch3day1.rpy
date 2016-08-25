@@ -559,14 +559,15 @@ label ch3day1:
 
             # соврать
             "— Тебя искал, кстати.":
-                if liePoints>0 or renpy.random.randint(1, 6)>1:
-                    $ liePoints+=1
+                if liePoints>0 or knowYumingRoom:
+                    if knowYumingRoom==False:
+                        $ liePoints+=1
                     yu "— Ого, зачем?"
                     "— В гости зайти!"
                     if visitedYumingRoom:
                         yu "— Прости, не сегодня..."
                     else:
-                        yu "— Хорошо, я как раз туда иду."
+                        yu "— Хорошо, я как раз к себе иду."
                         if knowYumingRoom == False:
                             yu "— Кстати, интересуешься политикой?"
                             "— Есть немного."

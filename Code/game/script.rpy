@@ -59,6 +59,8 @@ define isc = Character('Искра', color="#dede88")
 define teacher = Character('Учитель')
 define classmate = Character('Одноклассник')
 define gen = Character('Генерал Ганц', color="#f5efe9")
+define no1=Character('kek')
+define no2=Character('kek')
 
 
 # Музыка
@@ -137,6 +139,7 @@ init:
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
     $ knowYumingRoom = False # Знает комнату Юминг.
+    $ askedAboutAccuarcy = False # Спросил Юминг про проблемы точности Инферно.
     $ visitedYumingRoom = False # Был в комнате Юминг
     $ playedChess = False # Играл в шахматы с Тенко
     $ seenChessGame = False # Видел, как Тенко играет в шахматы
@@ -196,7 +199,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $ testing = True;
+    $ testing = False;
 
 
     # Imagedissolve Transitions. 
