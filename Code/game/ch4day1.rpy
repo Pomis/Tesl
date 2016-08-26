@@ -61,12 +61,16 @@ label ch4day1:
     gen "— Раз вопросов больше нет... Все свободны."
     "Люди стали поспешно вставать со своих мест и уходить. Я уже было собрался покинуть квартиру в гордом одиночестве, как меня догнал Слава."
     # Сцена подъезд
+    scene bg city corridor with dissolve
+    show slava suspicious:
+        xpos 0.57 ypos 1.02 xanchor 0.5 yanchor 1.0 
     sl "— Эй, [playerName], изучим город?"
     menu:
         "— Хорошая идея.":
             $ walkedWithSlava = True
             $ slavaPoints += 1
             sl "— Погнали!"
+            hide slava with dissolve
             scene bg city street day with dissolve
             "На улице немного прохладно, но солнечно."
             "Мы обошли пару кварталов, но не нашли вообще ничего интересного. Если в мире есть воплощение унылости, то это [cityName]."
@@ -133,8 +137,12 @@ label ch4day1:
                 "Какой ещё город. Марию бы найти."
                 "Где она вообще может быть?"
             sl "— Ну и ладно, сам прогуляюсь."
+            hide slava with dissolve
             "Слава ушёл вниз по лестнице."
             if mariePoints>0 and mariePoints<=3:
+                
+                show marie corridor smiling onlayer master:
+                    xpos 0.19 ypos 1.0 yanchor 1.0 zoom 0.97 
                 ma "— О, привет, [playerName]!"
                 "— Привет."
                 ma "— Я вечером уезжаю из этой дыры, хех!"
@@ -148,7 +156,10 @@ label ch4day1:
                     ma "— Я пойду, прогуляюсь перед путешествием..."
                 "— Удачной дороги, что ли."
                 ma "— Спасибо!"
+                hide marie
             elif mariePoints>3:
+                show marie corridor smiling onlayer master:
+                    xpos 0.19 ypos 1.0 yanchor 1.0 zoom 0.97 
                 ma "— О, вот ты где! Везде тебя ищу..."
                 "— Привет."
                 ma "— Я вечером уезжаю, приходится покидать родную страну..."
@@ -167,6 +178,7 @@ label ch4day1:
                 "— Да, пошли."
                 "Ой. А Славе отказал. Будет тупо, если встретим его.{w} Хотя, какая разница."
                 # сцена город
+                hide marie
                 scene bg city street day with dissolve
                 "Какой унылый город. Такое чувство, что это воплощение унылости."
                 ma "— Эй, чего задумался?"

@@ -59,8 +59,8 @@ define isc = Character(u'Искра', color="#dede88")
 define teacher = Character(u'Учитель')
 define classmate = Character(u'Одноклассник')
 define gen = Character(u'Генерал Ганц', color="#f5efe9")
-define no1=Character(u'kek')
-define no2=Character(u'kek')
+define no1=Character(u'Спецагент 1')
+define no2=Character(u'Спецагент 2')
 
 
 # Музыка
@@ -102,7 +102,7 @@ image text zumwalt = Text("{cps=18}{size=28}{color=#92f8ff}В это же вре
 
 init:
     # Характеристика игрока
-    $ playerName = ""
+    $ playerName = "Илья" #pomis: Если не указано сначала, то при пропуске первой главы так и остаётся пустым.
     $ playerFamilyName = "Гильдин"
     $ playerFullName = ""
     $ agressionPoints = 0
@@ -199,7 +199,7 @@ init:
     $ bloodrage = Fade(.25, 0, .45, color="#f00")
 
     # Тестирование
-    $ testing = False;
+    $ testing = True;
 
 
     # Imagedissolve Transitions. 
@@ -217,7 +217,8 @@ label start:
     $ layer_move("forward", 1500)
     if testing==True:
         menu:
-            "ch1 - ocean":
+            "Режим тестирования сцен."
+            "\[НАЧАЛО\]\nch1 - ocean":
                 jump ocean
             "ch2 - inferno":
                 jump rootInferno
@@ -229,14 +230,20 @@ label start:
                 jump ch3day1
             "ch3 - day2":
                 jump ch3day2
+            "ch3 - day3":
+                jump ch3day3
             "ch4 - day0":
                 jump ch4
             "ch4 - day1":
                 jump ch4day1
             "ch5enlil":
                 jump ch5enlil
-            "ch5day0":
+            "ch5 - day0":
                 jump ch5day0
+            "chN - soldier":
+                jump chNsoldier
+            "chN - inferno":
+                jump chNinferno
     else:
         jump ocean
 
