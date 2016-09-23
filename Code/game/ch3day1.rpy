@@ -451,6 +451,7 @@ label ch3day1:
     play music welcome
     show slava laughing at right with dissolve
     sl "— Тир? Я бы назвал это место полигоном"
+    show pavel normal at left with dissolve
     pav0 "— Скоро сюда завезут новые пушки. Тогда точно станет полигоном."
     sl "— Эй, [playerName], а какое оружие ты предпочитаешь?"
     menu:

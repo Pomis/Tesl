@@ -351,7 +351,8 @@ label fuckRoommate:
     "..."
     jump nextDay
 
-label killing
+label killing:
+    ""
 
 label nextDay:
     scene bg hospital room night
