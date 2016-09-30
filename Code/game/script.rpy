@@ -101,7 +101,7 @@ init:
     # Характеристика игрока
     $ playerName = "Илья" #pomis: Если не указано сначала, то при пропуске первой главы так и остаётся пустым.
     $ playerFamilyName = "Гильдин"
-    $ playerFullName = ""
+    $ playerFullName = "Илья Гильдин"
     $ agressionPoints = 0
     $ lazynessPoints = 0
     $ humorousPoints = 0
