@@ -554,6 +554,8 @@ label ch3day1:
     menu:
         "Изучить пушки.":
             $ gunPoints += 1
+            $ shotFromKalash = True
+
             scene bg poligon tir with dissolve
             pav0 "— Всё это оружие работает на нейроинтерфейсе. Будет проще целиться, всё такое."
             sl "— Не терпится применить на практике!"
@@ -605,6 +607,7 @@ label ch3day1:
                 isc "— Нет, я одна."
                 "Кажется, я ей уже не нравлюсь."
                 $ gunPoints += 1
+                $ shotFromKalash = True
                 scene bg poligon tir with dissolve
                 pav0 "— Всё это оружие работает на нейроинтерфейсе. Будет проще целиться, всё такое."
                 sl "— Не терпится применить на практике!"
