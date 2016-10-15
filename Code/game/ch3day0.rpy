@@ -582,6 +582,7 @@ label grossmeister:
         # pomis: Я тут увидел отсылку к Hearthstone
         # bulka: Тут была отсылка к доте well played! Когда косячишь в доте так тоже поздравляют. 
         "— Спасибо за игру."
+        # TODO: bulka: А теперь тут надо будет всё переделывать. Как и ещё два диалога с тенко. Какой я молодец...
     hide tenko
     "Мы попрощались и я пошёл в свою комнату."
     scene bg coridor second with dissolve
