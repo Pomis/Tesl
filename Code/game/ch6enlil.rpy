@@ -1,3 +1,7 @@
+#
+#   КОНСЕРВА
+#
+
 label ch6enlil:
     scene bg black
     en "— Эй, ты живой?"
