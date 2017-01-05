@@ -130,6 +130,7 @@ init:
     $ brokenFinger = False # Сосед по палате сломал гг палец
     $ inferno = False # Сценарий Инферно
     $ visitedLab = False # Посетил лабораторию
+    $ marieSaidAboutBeer = False # Мария обмолвилась о том, что хочет пиво
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
     $ withMarieInHangar = False # Вместе с Марией в ангаре
     $ stolenFlash = False # Украл флешку из лаборатории
