@@ -129,16 +129,21 @@ init:
     $ chesspoints = False # bulka: Я просто заебался работать с этими условиями для одного выражения. Рабочая переменная. Символизирует признание уровня игры.    
     $ brokenFinger = False # Сосед по палате сломал гг палец
     $ inferno = False # Сценарий Инферно
-    $ visitedLab = False # Посетил лабораторию
+    $ visitedLab = False # Посетил лабораторию в день 0
+    $ visitedLabDay2 = False # Посетил лабораторию в день 2
     $ marieSaidAboutBeer = False # Мария обмолвилась о том, что хочет пиво
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
     $ withMarieInHangar = False # Вместе с Марией в ангаре
     $ stolenFlash = False # Украл флешку из лаборатории
+    $ hackLinux = False # выбрал ломать линукс в загадке от Марии
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
     $ wantToAskAboutSignal = False # Хочет спросить Марию о сигнале на передатчике
+    $ wantToStealSchemes = False # Хочет стырить схемы системы безопасности с помощью Марии
     $ knowYumingRoom = False # Знает комнату Юминг.
     $ askedAboutAccuarcy = False # Спросил Юминг про проблемы точности Инферно.
     $ visitedYumingRoom = False # Был в комнате Юминг
+    $ saidAboutSchool = False # Сказал, что не любит школу, а предпочитает практику
+    $ saidThatBotsAreTrash = False # Сказал, что боты Марии — говно
     $ playedChess = False # Играл в шахматы с Тенко
     $ seenChessGame = False # Видел, как Тенко играет в шахматы
     $ usedDirectRadio = False # Уже использовал передатчик с нейроинтерфейсом
@@ -150,7 +155,7 @@ init:
     $ ushWonded = False # Уш ранен из пистолета
     $ pickedManipulator = False # подобрал манипулятор сознанием
     $ neutral = False # отношение юминг в доп главе.
-    $ marieJoke = False # шутка марии в доп главе
+    # $ marieJoke = False # шутка марии в доп главе
     $ PavelHelp = False # способ узнать инфу от павла
     $ tenkoInterested = False # Тенко заинтересовался в случае с кораблём. Возможно, эта переменная будет задействована при переходе из Инферно в рут людей. Изначально создал её, чтобы выбор влиял хоть сколько-то.
     $ PavelHelped = False # Вылазил ли Павел из вентиляции
@@ -227,6 +232,7 @@ label start:
             "\[НАЧАЛО\]\nch1 - ocean":
                 jump ocean
             "ch2 - inferno":
+                $ inferno = True
                 jump rootInferno
             "ch2 - soldier":
                 jump rootSoldier
@@ -242,7 +248,10 @@ label start:
                 jump ch4
             "ch4 - day1":
                 jump ch4day1
+            "ch5marie":
+                jump ch5marie
             "ch5enlil":
+                $ inferno = True
                 jump ch5enlil
             "ch5 - day0":
                 jump ch5day0
