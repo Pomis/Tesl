@@ -135,6 +135,7 @@ init:
     $ promisedMarie = False # Обещал Марии заглянуть в лабораторию
     $ withMarieInHangar = False # Вместе с Марией в ангаре
     $ saidThatMarieCute = False # Сказал Марии, что она милая
+    $ choseToBeSoldier = False # Ответил Марии, что хотел бы снова стать солдатом
     $ stolenFlash = False # Украл флешку из лаборатории
     $ hackLinux = False # выбрал ломать линукс в загадке от Марии
     $ heardAboutTitan = False # Слышал о титанах до лекции в классе
