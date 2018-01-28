@@ -38,7 +38,7 @@ label flashback1:
     return
 
 label flashback2:
-    show bg cruise crashed with flash
+    scene bg cruise crashed with flash
     play music humanity
     sis "— Бра-а-а-ат! Помоги-и-и!"
     "Тоня всё сильнее удалялась от меня и вскоре скрылась в морской пучине. Я держался за выступающий  на палубе штырь."
