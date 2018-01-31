@@ -71,7 +71,9 @@ label ch3day1:
     # bpaw: Чего 9? Уверен, что порою бывает >9 учеников
     # bulka: Мне даже влом проверять удалили ли объяснение этого, ибо даже если оно есть - ты его не читал. С - стабильность.
 
-    show jorik mad with dissolve
+    
+    show jorik mad onlayer master with dissolve:
+        xpos 0.84 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.17 
     co "— Ну, добро пожаловать!"
     "Он внимательно оглядел нас и вдруг спросил"
     show jorik laugh with dissolve
@@ -91,7 +93,7 @@ label ch3day1:
         "Посмотреть направо":
             $ minoriPoints += 1
             scene bg educlass right
-            show minori at center2
+            show minori sad at center2
             "Я повернул голову и встретился глазами с девушкой. На вид азиатка."
             "Хм... А она точно боец? Хотя, здесь смотрят только на наличие способности управлять нейронтами..."
             "Девушка смущённо смотрела в пол. Однако ей удалось заговорить первой."
@@ -392,7 +394,9 @@ label ch3day1:
             "Так и хочется сказать что-то умное, но лучше промолчу."
             # bpaw: жиза
     scene bg educlass center
-    show jorik usual with dissolve
+    
+    show jorik usual onlayer master with dissolve:
+        xpos 0.84 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.17 
     co "— Ладно, судя по тому, как вы галдите, познакомиться вы уже успели. Давайте начнём."
     co "— Думаю, вам уже объяснили, почему вы здесь и что происходит, но я всё же уточню."
     co "— В настоящее время мир находится в стадии скрытной войны. Наш враг — Инферно, некая раса существ, о существовании которых мы узнали недавно."
@@ -486,6 +490,8 @@ label ch3day1:
     scene bg poligon guns
     play music welcome
     show slava laughing at right with dissolve
+    show minori sad onlayer master with dissolve:
+        xpos 0.5 ypos 1.04 xanchor 0.5 yanchor 1.0     
     sl "— Тир? Я бы назвал это место полигоном"
     show pavel normal at left with dissolve
     pav0 "— Скоро сюда завезут новые пушки. Тогда точно станет полигоном."
@@ -502,6 +508,7 @@ label ch3day1:
             isc "— Да ладно, хороший выбор."
         "— Мечи":
             $ minoriPoints += 1
+            show minori smiling 
             sl "— А ты хоть раз держал в руках меч?"
             "— Нет, к сожалению. Но выглядят они круто!"
             mi "— А у меня дома есть катана."

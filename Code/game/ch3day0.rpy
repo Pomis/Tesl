@@ -85,7 +85,7 @@ label warBase:
     hide bg onlayer background
     scene bg lift with dissolve
     "Что мне остаётся делать?.."
-    show marie smiling at center2
+    show marie lift smiling at center2
     ma "— Наша военная база распределена по всей горе.{w} Разные узлы расположены в разных частях горы. Это позволит системе функционировать в случае, когда часть будет уничтожена."
     "— А чего лифт такой раздолбанный?"
     ma "— Сам ты...{w} В общем, он многое пережил, да и нас переживёт. А менять вообще не вариант, других способов перемещения по базе нет. Работает и ладно."
@@ -106,7 +106,7 @@ label warBase:
             ma "— А я каким говорю?"
         "— Я так понимаю, ты мозг базы?":
             $ mariePoints += 1
-            show marie smiling onlayer master:
+            show marie lift smiling onlayer master:
                 ease 0.5 xpos 0.52 ypos 1.03 xanchor 0.5 yanchor 1.0 zoom 1.02
             ma "— Хех, ну что-то в этом роде."
             # bpaw: Улыбочку я скопипастил
@@ -328,12 +328,13 @@ label goHome:
     "Мне уже надоело слушать Марию, хотелось бы узнать, где я буду жить."
     "Едва заметно вздохнув она встала и вызвала лифт."
     scene bg lift with dissolve
-    show marie smiling at center2 
+    show marie lift smiling at center2 
     ma "— Пошли, покажу..."
     # bulka: И где она ему комнату показала? С - стабильность...
     "Она нажала на экран в лифте, выбрала какой-то элемент. Лифт сразу же начал набирать скорость."
     "И правда, чем-то похоже на метро."
     "Может, шумом?{w} Зато быстро."
+    hide marie
     scene bg coridor newbies with dissolve
     show marie smiling at right
     ma "— Это жилой корпус новобранцев. Твоя комната N04. Найдёшь, надеюсь."

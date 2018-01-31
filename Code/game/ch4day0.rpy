@@ -608,12 +608,17 @@ label reunion:
     # bulka: Эти пойнты означают качество противостояния Тенко и ответа на его действия. Они не означают положительное/негативное отношение к нему.
     hide nvl
     # pomis: OK
-    scene bg city room night
+    scene bg city street night with dissolve
+    scene bg city street dvor night with dissolve
+    scene bg city room night with dissolve
+    scene black with closing
     if killedPeopleCount>1:
         "Мне снились те люди, которые умерли от моей руки."
         if yumingAlive == False:
             "Я сбрасывал тело Юминг из лодки снова и снова... "
+    else:
     # TODO: Расписать надо бы сон.
+        "Бессоница — неумение заткнуть свой мозг?"
     jump ch4day1
         #Если за солдата, и не набрано достаточного количества поинтов с Марией. 
 

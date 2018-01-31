@@ -38,6 +38,7 @@ label flashback1:
     return
 
 label flashback2:
+    hide black onlayer background
     scene bg cruise crashed with flash
     play music humanity
     sis "— Бра-а-а-ат! Помоги-и-и!"
@@ -51,6 +52,7 @@ label flashback2:
     "— Помогите!"
     "Никто даже не обратил на меня внимание, я залез на ближайшую лодку и обессиленно лёг."
     "— Почему именно я?"
+    hide bg cruise
     return
 
 label flashback3:

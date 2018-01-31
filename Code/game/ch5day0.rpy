@@ -54,7 +54,7 @@ label ch5day0:
         scene bg city corridor
         sl "— Эй, [playerName], я схожу за продуктами, скоро приготовим чего-нибудь!"
         "— Отлично. Я пока посижу во дворе, подожду."
-        scene bg city dvor day
+        scene bg city street dvor day
         "Я развернул бумажку, которая оказалось скучной распечаткой рецепта плова."
         if iscraPoints>1: # Если есть хоть немного положительного взаимодействия с Искрой
             isc "— Чем занят?"
@@ -80,7 +80,7 @@ label ch5day0:
         isc "— О, солдатик пришёл."
         if selectedIscraDinner:
             "Искра окинула меня злобным взглядом."
-        
+        return
                     
                 
         
